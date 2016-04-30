@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SobreEmpresaVC" customModule="beMEMO" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9c-td-MZX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He8-Nk-OpJ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="820"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Empresa" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-dc-AXS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="beMEMO" translatesAutoresizingMaskIntoConstraints="NO" id="LT9-gb-nY7">
+                                    <rect key="frame" x="111" y="267" width="142" height="24"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="“Seja qual for o seu sonho, que ele seja memorável.”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch7-TT-Zpj">
+                                    <rect key="frame" x="3" y="324" width="359" height="40"/>
+                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                    <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-kC-032">
+                                    <rect key="frame" x="8" y="372" width="359" height="319"/>
+                                    <mutableString key="text">A beMEMO nasceu com o objetivo de tornar os momentos importantes de seus clientes ainda mais especiais, se preocupando com cada detalhe e trabalhando junto a fornecedores de qualidade e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá </mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A Empresa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7h-7z-IGA">
+                                    <rect key="frame" x="145" y="295" width="74" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Q3u-kC-032" secondAttribute="trailing" constant="8" id="9V1-Yo-8X0"/>
+                                <constraint firstAttribute="trailing" secondItem="oKF-dc-AXS" secondAttribute="trailing" id="AEd-qW-gDK"/>
+                                <constraint firstItem="Q3u-kC-032" firstAttribute="top" secondItem="ch7-TT-Zpj" secondAttribute="bottom" constant="8" id="BiU-kt-Rrc"/>
+                                <constraint firstItem="d7h-7z-IGA" firstAttribute="top" secondItem="LT9-gb-nY7" secondAttribute="bottom" constant="4" id="HPg-Is-9h7"/>
+                                <constraint firstAttribute="trailing" secondItem="d7h-7z-IGA" secondAttribute="trailing" constant="156" id="IVW-8U-75c"/>
+                                <constraint firstItem="Q3u-kC-032" firstAttribute="leading" secondItem="He8-Nk-OpJ" secondAttribute="leading" constant="8" id="LPO-Ch-Dd5"/>
+                                <constraint firstItem="oKF-dc-AXS" firstAttribute="leading" secondItem="He8-Nk-OpJ" secondAttribute="leading" id="Ozh-Az-gYh"/>
+                                <constraint firstItem="d7h-7z-IGA" firstAttribute="leading" secondItem="He8-Nk-OpJ" secondAttribute="leading" constant="145" id="T4m-IO-XPS"/>
+                                <constraint firstItem="ch7-TT-Zpj" firstAttribute="top" secondItem="d7h-7z-IGA" secondAttribute="bottom" constant="8" id="Tto-U6-lNo"/>
+                                <constraint firstAttribute="trailing" secondItem="ch7-TT-Zpj" secondAttribute="trailing" constant="13" id="Uib-to-UGd"/>
+                                <constraint firstItem="LT9-gb-nY7" firstAttribute="top" secondItem="oKF-dc-AXS" secondAttribute="bottom" constant="7" id="eFp-kz-d76"/>
+                                <constraint firstItem="LT9-gb-nY7" firstAttribute="leading" secondItem="He8-Nk-OpJ" secondAttribute="leading" constant="111" id="eQf-Jp-jyT"/>
+                                <constraint firstAttribute="trailing" secondItem="LT9-gb-nY7" secondAttribute="trailing" constant="122" id="j7o-Au-BV8"/>
+                                <constraint firstItem="oKF-dc-AXS" firstAttribute="top" secondItem="He8-Nk-OpJ" secondAttribute="top" id="ulM-Sd-BrP"/>
+                                <constraint firstAttribute="bottom" secondItem="Q3u-kC-032" secondAttribute="bottom" constant="15" id="vh0-LN-cpH"/>
+                                <constraint firstAttribute="bottom" secondItem="Q3u-kC-032" secondAttribute="bottom" constant="150" id="xTz-Bz-0go"/>
+                                <constraint firstItem="ch7-TT-Zpj" firstAttribute="leading" secondItem="He8-Nk-OpJ" secondAttribute="leading" constant="3" id="yWF-hC-VXt"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="vh0-LN-cpH"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="He8-Nk-OpJ" secondAttribute="bottom" id="9ES-mF-x87"/>
+                        <constraint firstAttribute="trailing" secondItem="He8-Nk-OpJ" secondAttribute="trailing" id="BEa-bI-HFF"/>
+                        <constraint firstItem="He8-Nk-OpJ" firstAttribute="leading" secondItem="Q9c-td-MZX" secondAttribute="leading" id="C6U-EJ-X8C"/>
+                        <constraint firstItem="He8-Nk-OpJ" firstAttribute="top" secondItem="Q9c-td-MZX" secondAttribute="top" id="Cex-gy-cZp"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Q9c-td-MZX" secondAttribute="trailing" id="BmV-Em-dIW"/>
+                <constraint firstItem="Q9c-td-MZX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CVT-IM-ft3"/>
+                <constraint firstItem="He8-Nk-OpJ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="GjT-yC-9ZO"/>
+                <constraint firstAttribute="bottom" secondItem="Q9c-td-MZX" secondAttribute="bottom" id="Qqf-2H-w59"/>
+                <constraint firstItem="Q9c-td-MZX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vWo-dp-HWa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="379.5" y="463.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Empresa" width="375" height="256"/>
+        <image name="beMEMO" width="142" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SobreTalitaVC" customModule="beMEMO" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="O2s-4V-PJX" id="fpd-8S-j26"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="O2s-4V-PJX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1S-VB-gRk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4J-SU-oEO">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="802.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TalitaDias" translatesAutoresizingMaskIntoConstraints="NO" id="X9U-zS-hRy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="“Seja qual for o seu sonho, que ele seja memorável.”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUQ-dk-iXP">
+                                    <rect key="frame" x="3" y="324" width="359" height="40"/>
+                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                    <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npE-gK-8cK">
+                                    <rect key="frame" x="8" y="372" width="359" height="319"/>
+                                    <mutableString key="text">A arquiteta paulistana formada pela Universidade Prebisteriana  Mackenzie, ampliou seus estudos no Reino Unido  blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá e blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá blá,blá blá </mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Arquiteta Proprietária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We8-JZ-mlR">
+                                    <rect key="frame" x="114" y="296" width="147" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talita Dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAG-05-tnh">
+                                    <rect key="frame" x="119" y="261" width="127" height="31.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                    <color key="textColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="JUQ-dk-iXP" secondAttribute="trailing" constant="13" id="7D2-Rm-65R"/>
+                                <constraint firstItem="LAG-05-tnh" firstAttribute="leading" secondItem="h4J-SU-oEO" secondAttribute="leading" constant="119" id="DzU-bk-FXc"/>
+                                <constraint firstAttribute="trailing" secondItem="X9U-zS-hRy" secondAttribute="trailing" id="J6N-z2-D4Q"/>
+                                <constraint firstAttribute="trailing" secondItem="LAG-05-tnh" secondAttribute="trailing" constant="129" id="QTz-fn-5X3"/>
+                                <constraint firstItem="We8-JZ-mlR" firstAttribute="leading" secondItem="h4J-SU-oEO" secondAttribute="leading" constant="114" id="TlK-Tb-CUT"/>
+                                <constraint firstItem="We8-JZ-mlR" firstAttribute="top" secondItem="LAG-05-tnh" secondAttribute="bottom" constant="1" id="cqC-54-Ad9"/>
+                                <constraint firstItem="X9U-zS-hRy" firstAttribute="leading" secondItem="h4J-SU-oEO" secondAttribute="leading" id="dol-d1-fPH"/>
+                                <constraint firstAttribute="trailing" secondItem="We8-JZ-mlR" secondAttribute="trailing" constant="114" id="g8a-Wn-CGS"/>
+                                <constraint firstItem="npE-gK-8cK" firstAttribute="top" secondItem="JUQ-dk-iXP" secondAttribute="bottom" constant="8" id="kK2-Ua-Yi0"/>
+                                <constraint firstItem="npE-gK-8cK" firstAttribute="leading" secondItem="h4J-SU-oEO" secondAttribute="leading" constant="8" id="kzT-sk-lD1"/>
+                                <constraint firstItem="JUQ-dk-iXP" firstAttribute="top" secondItem="We8-JZ-mlR" secondAttribute="bottom" constant="8" id="mFZ-9l-x3J"/>
+                                <constraint firstAttribute="bottom" secondItem="npE-gK-8cK" secondAttribute="bottom" constant="150" id="qfB-Nw-EKK"/>
+                                <constraint firstItem="X9U-zS-hRy" firstAttribute="top" secondItem="h4J-SU-oEO" secondAttribute="top" id="thi-fQ-UKW"/>
+                                <constraint firstItem="LAG-05-tnh" firstAttribute="top" secondItem="X9U-zS-hRy" secondAttribute="bottom" constant="1" id="xpB-qT-eKI"/>
+                                <constraint firstAttribute="trailing" secondItem="npE-gK-8cK" secondAttribute="trailing" constant="8" id="zgm-fT-W3I"/>
+                                <constraint firstItem="JUQ-dk-iXP" firstAttribute="leading" secondItem="h4J-SU-oEO" secondAttribute="leading" constant="3" id="zun-ch-WUj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="h4J-SU-oEO" firstAttribute="leading" secondItem="C1S-VB-gRk" secondAttribute="leading" id="9EH-Ty-ZO1"/>
+                        <constraint firstAttribute="trailing" secondItem="h4J-SU-oEO" secondAttribute="trailing" id="HeT-Ks-46E"/>
+                        <constraint firstAttribute="bottom" secondItem="h4J-SU-oEO" secondAttribute="bottom" id="dXC-kG-xAt"/>
+                        <constraint firstItem="h4J-SU-oEO" firstAttribute="top" secondItem="C1S-VB-gRk" secondAttribute="top" id="zj5-qV-vAn"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C1S-VB-gRk" secondAttribute="trailing" id="6bJ-SY-poR"/>
+                <constraint firstAttribute="bottom" secondItem="C1S-VB-gRk" secondAttribute="bottom" id="VS7-ui-A2q"/>
+                <constraint firstItem="C1S-VB-gRk" firstAttribute="leading" secondItem="O2s-4V-PJX" secondAttribute="leading" id="YGa-Oj-9f7"/>
+                <constraint firstItem="h4J-SU-oEO" firstAttribute="width" secondItem="O2s-4V-PJX" secondAttribute="width" id="ekG-zO-VCu"/>
+                <constraint firstItem="C1S-VB-gRk" firstAttribute="top" secondItem="O2s-4V-PJX" secondAttribute="top" id="xCq-It-aSm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="379.5" y="463.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TalitaDias" width="376" height="260"/>
+    </resources>
+</document>

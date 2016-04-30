@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */; };
+		7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */; };
+		7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86321CD428BB005F0461 /* SobreVC.swift */; };
+		7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */; };
+		7EBA86391CD42978005F0461 /* SobreTalitaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBA86351CD42978005F0461 /* SobreTalitaVC.xib */; };
+		7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86361CD42978005F0461 /* SobreEmpresaVC.swift */; };
+		7EBA863B1CD42978005F0461 /* SobreEmpresaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBA86371CD42978005F0461 /* SobreEmpresaVC.xib */; };
+		7EBA86401CD4573F005F0461 /* ContatoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA863F1CD4573F005F0461 /* ContatoVC.swift */; };
 		7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7041CD4203300F30D2F /* AppDelegate.swift */; };
 		7ECAA7071CD4203300F30D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7061CD4203300F30D2F /* ViewController.swift */; };
 		7ECAA70A1CD4203300F30D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA7081CD4203300F30D2F /* Main.storyboard */; };
@@ -15,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.release.xcconfig"; sourceTree = "<group>"; };
+		7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		7EBA86321CD428BB005F0461 /* SobreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreVC.swift; sourceTree = "<group>"; };
+		7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTalitaVC.swift; sourceTree = "<group>"; };
+		7EBA86351CD42978005F0461 /* SobreTalitaVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SobreTalitaVC.xib; sourceTree = "<group>"; };
+		7EBA86361CD42978005F0461 /* SobreEmpresaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreEmpresaVC.swift; sourceTree = "<group>"; };
+		7EBA86371CD42978005F0461 /* SobreEmpresaVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SobreEmpresaVC.xib; sourceTree = "<group>"; };
+		7EBA863F1CD4573F005F0461 /* ContatoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoVC.swift; sourceTree = "<group>"; };
 		7ECAA7011CD4203300F30D2F /* beMEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beMEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECAA7041CD4203300F30D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ECAA7061CD4203300F30D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,8 @@
 		7ECAA70B1CD4203300F30D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ECAA70E1CD4203300F30D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECAA7101CD4203300F30D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.debug.xcconfig"; sourceTree = "<group>"; };
+		AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beMEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5ECEFCB58BCE3A2D34196C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */,
+				0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EBA863C1CD42DC7005F0461 /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				7EBA86321CD428BB005F0461 /* SobreVC.swift */,
+				7EBA86361CD42978005F0461 /* SobreEmpresaVC.swift */,
+				7EBA86371CD42978005F0461 /* SobreEmpresaVC.xib */,
+				7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */,
+				7EBA86351CD42978005F0461 /* SobreTalitaVC.xib */,
+				7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */,
+			);
+			name = Sobre;
+			sourceTree = "<group>";
+		};
+		7EBA863D1CD42DD4005F0461 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7ECAA7081CD4203300F30D2F /* Main.storyboard */,
+				7ECAA7061CD4203300F30D2F /* ViewController.swift */,
+				7ECAA7041CD4203300F30D2F /* AppDelegate.swift */,
+				7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7EBA863E1CD456E4005F0461 /* Contato */ = {
+			isa = PBXGroup;
+			children = (
+				7EBA863F1CD4573F005F0461 /* ContatoVC.swift */,
+			);
+			name = Contato;
+			sourceTree = "<group>";
+		};
 		7ECAA6F81CD4203300F30D2F = {
 			isa = PBXGroup;
 			children = (
 				7ECAA7031CD4203300F30D2F /* beMEMO */,
 				7ECAA7021CD4203300F30D2F /* Products */,
+				4F5ECEFCB58BCE3A2D34196C /* Pods */,
+				98D20488A6741A1286DC156A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +116,21 @@
 		7ECAA7031CD4203300F30D2F /* beMEMO */ = {
 			isa = PBXGroup;
 			children = (
-				7ECAA7041CD4203300F30D2F /* AppDelegate.swift */,
-				7ECAA7061CD4203300F30D2F /* ViewController.swift */,
-				7ECAA7081CD4203300F30D2F /* Main.storyboard */,
+				7EBA863D1CD42DD4005F0461 /* Base */,
+				7EBA863E1CD456E4005F0461 /* Contato */,
+				7EBA863C1CD42DC7005F0461 /* Sobre */,
 				7ECAA70B1CD4203300F30D2F /* Assets.xcassets */,
-				7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */,
 				7ECAA7101CD4203300F30D2F /* Info.plist */,
 			);
 			path = beMEMO;
+			sourceTree = "<group>";
+		};
+		98D20488A6741A1286DC156A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ECAA7131CD4203300F30D2F /* Build configuration list for PBXNativeTarget "beMEMO" */;
 			buildPhases = (
+				C8378BDF2AE37E3375797227 /* Check Pods Manifest.lock */,
 				7ECAA6FD1CD4203300F30D2F /* Sources */,
 				7ECAA6FE1CD4203300F30D2F /* Frameworks */,
 				7ECAA6FF1CD4203300F30D2F /* Resources */,
+				2C4F1CF205C59EA706C70C88 /* Embed Pods Frameworks */,
+				5BC3AAB6D4874E33E2D03B9A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ECAA70F1CD4203300F30D2F /* LaunchScreen.storyboard in Resources */,
+				7EBA86391CD42978005F0461 /* SobreTalitaVC.xib in Resources */,
+				7EBA863B1CD42978005F0461 /* SobreEmpresaVC.xib in Resources */,
 				7ECAA70C1CD4203300F30D2F /* Assets.xcassets in Resources */,
 				7ECAA70A1CD4203300F30D2F /* Main.storyboard in Resources */,
 			);
@@ -131,13 +205,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C4F1CF205C59EA706C70C88 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BC3AAB6D4874E33E2D03B9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8378BDF2AE37E3375797227 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7ECAA6FD1CD4203300F30D2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */,
 				7ECAA7071CD4203300F30D2F /* ViewController.swift in Sources */,
+				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
+				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
+				7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */,
+				7EBA86401CD4573F005F0461 /* ContatoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +377,7 @@
 		};
 		7ECAA7141CD4203300F30D2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beMEMO/Info.plist;
@@ -261,6 +389,7 @@
 		};
 		7ECAA7151CD4203300F30D2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beMEMO/Info.plist;
@@ -289,6 +418,7 @@
 				7ECAA7151CD4203300F30D2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
