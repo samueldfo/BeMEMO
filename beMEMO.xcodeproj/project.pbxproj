@@ -14,12 +14,14 @@
 		7EBA86391CD42978005F0461 /* SobreTalitaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBA86351CD42978005F0461 /* SobreTalitaVC.xib */; };
 		7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86361CD42978005F0461 /* SobreEmpresaVC.swift */; };
 		7EBA863B1CD42978005F0461 /* SobreEmpresaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBA86371CD42978005F0461 /* SobreEmpresaVC.xib */; };
-		7EBA86401CD4573F005F0461 /* ContatoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA863F1CD4573F005F0461 /* ContatoVC.swift */; };
+		7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86411CE12CE4005F0461 /* TableVCContato.swift */; };
+		7EBA86441CE12F14005F0461 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86431CE12F14005F0461 /* Contato.swift */; };
 		7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7041CD4203300F30D2F /* AppDelegate.swift */; };
 		7ECAA7071CD4203300F30D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7061CD4203300F30D2F /* ViewController.swift */; };
 		7ECAA70A1CD4203300F30D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA7081CD4203300F30D2F /* Main.storyboard */; };
 		7ECAA70C1CD4203300F30D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70B1CD4203300F30D2F /* Assets.xcassets */; };
 		7ECAA70F1CD4203300F30D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */; };
+		7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +32,8 @@
 		7EBA86351CD42978005F0461 /* SobreTalitaVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SobreTalitaVC.xib; sourceTree = "<group>"; };
 		7EBA86361CD42978005F0461 /* SobreEmpresaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreEmpresaVC.swift; sourceTree = "<group>"; };
 		7EBA86371CD42978005F0461 /* SobreEmpresaVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SobreEmpresaVC.xib; sourceTree = "<group>"; };
-		7EBA863F1CD4573F005F0461 /* ContatoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoVC.swift; sourceTree = "<group>"; };
+		7EBA86411CE12CE4005F0461 /* TableVCContato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVCContato.swift; sourceTree = "<group>"; };
+		7EBA86431CE12F14005F0461 /* Contato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		7ECAA7011CD4203300F30D2F /* beMEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beMEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECAA7041CD4203300F30D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ECAA7061CD4203300F30D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		7ECAA70B1CD4203300F30D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ECAA70E1CD4203300F30D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECAA7101CD4203300F30D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beMEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,7 +94,9 @@
 		7EBA863E1CD456E4005F0461 /* Contato */ = {
 			isa = PBXGroup;
 			children = (
-				7EBA863F1CD4573F005F0461 /* ContatoVC.swift */,
+				7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */,
+				7EBA86411CE12CE4005F0461 /* TableVCContato.swift */,
+				7EBA86431CE12F14005F0461 /* Contato.swift */,
 			);
 			name = Contato;
 			sourceTree = "<group>";
@@ -260,11 +266,13 @@
 			files = (
 				7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */,
 				7ECAA7071CD4203300F30D2F /* ViewController.swift in Sources */,
+				7EBA86441CE12F14005F0461 /* Contato.swift in Sources */,
+				7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */,
 				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
 				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
+				7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */,
 				7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */,
-				7EBA86401CD4573F005F0461 /* ContatoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
