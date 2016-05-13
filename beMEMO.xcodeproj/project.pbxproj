@@ -22,6 +22,7 @@
 		7ECAA70C1CD4203300F30D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70B1CD4203300F30D2F /* Assets.xcassets */; };
 		7ECAA70F1CD4203300F30D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */; };
 		7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */; };
+		7EEC13F81CE3CE5D0068D322 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7ECAA70E1CD4203300F30D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECAA7101CD4203300F30D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beMEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEC13F81CE3CE5D0068D322 /* MessageUI.framework in Frameworks */,
 				7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +137,7 @@
 		98D20488A6741A1286DC156A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */,
 				AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */,
 			);
 			name = Frameworks;
@@ -389,9 +393,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beMEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = samueldfo.beMEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -401,9 +407,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beMEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = samueldfo.beMEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

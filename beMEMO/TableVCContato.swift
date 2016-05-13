@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
 
     
     @IBOutlet weak var ContatoTableView: UITableView! //outlet tablet view
@@ -38,13 +39,13 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
         // remove cell vazia da tableview
         ContatoTableView.tableFooterView = UIView()
     
-    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     //Carregar info das células da TableView
     func loadData() -> [Contato] {
@@ -90,6 +91,35 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
         return 55.0;
     }
     
+    
+    //chama composer e configura campos
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        mailComposerVC.setToRecipients(["emaildabememo@gmail.com"])
+        mailComposerVC.setSubject("Contato App beMEMO")
+        
+        return mailComposerVC
+    }
+    
+    //envia mensagem se der erro
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertController(title: "Não foi possível enviar o e-mail", message: "Seu aparelho não pode enviar o e-mail. Por favor verifique as configuraçoes de e-mail e tente novamente.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let cancelAction: UIAlertAction = UIAlertAction(title: "OK", style: .Cancel) { action -> Void in
+        }
+        
+        sendMailErrorAlert.addAction(cancelAction)
+        self.presentViewController(sendMailErrorAlert, animated: true, completion: nil)
+
+    }
+    
+    //retorna ao app após dismiss
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    
+    }
+    
     //chama as segue
 
     var indicecell : Int = Int()
@@ -112,16 +142,23 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
         break;
         case 5: self.performSegueWithIdentifier("websegue", sender: self);
         break;
-        case 6: self.performSegueWithIdentifier("mail", sender: self);
+        case 6:
+            
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
         break;
-        case 7: self.performSegueWithIdentifier("phone", sender: self);
+            
+        case 7: UIApplication.sharedApplication().openURL(NSURL(string: "telprompt://11984240039")!)
         break;
         default:
             break
         }
-        
     }
-    
+        
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
         if (segue.identifier == "websegue") {
@@ -151,11 +188,5 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
                 break
             }
         }
-        
     }
 }
-    
-    
-
-    
-    

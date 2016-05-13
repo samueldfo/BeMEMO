@@ -48,14 +48,15 @@ class SobreVC: UIViewController {
             .ScrollMenuBackgroundColor(UIColor(red: 219.0/255.0, green: 200.0/255.0, blue: 168.0/255.0, alpha: 0.0)), //cor de fundo
             .SelectionIndicatorColor(UIColor(red: 65.0/255.0, green: 117.0/255.0, blue: 5.0/255.0, alpha: 1.0)), //cor do indicador
             .MenuItemFont(UIFont(name: ".SFUIText-Semibold", size: 14.0)!), //fonte
-            .MenuHeight(32.0), //altura item
+            .MenuHeight(40.0), //altura item
             .MenuItemWidth(90.0), //largura item
             .AddBottomMenuHairline(true), //linha abaixo do indicador
             .BottomMenuHairlineColor(UIColor(red: 145.0/255.0, green: 145.0/255.0, blue: 145.0/255.0, alpha: 0.8)), //cor da linha do indicador
             .CenterMenuItems(true), //centralizar itens
-            .MenuItemSeparatorPercentageHeight(0.0), //separador
-            .UnselectedMenuItemLabelColor(UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)), // cor do nao selecionado
-            .SelectedMenuItemLabelColor(UIColor(red: 65.0/255.0, green: 117.0/255.0, blue: 5.0/255.0, alpha: 1.0)), //cor do selecionado
+            .MenuItemSeparatorPercentageHeight(0.7), //tamamho separador vertical
+            .MenuItemSeparatorRoundEdges(true), //limite do separador arredondado
+            .UnselectedMenuItemLabelColor(UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.8)), // cor fonte do nao selecionado
+            .SelectedMenuItemLabelColor(UIColor(red: 65.0/255.0, green: 117.0/255.0, blue: 5.0/255.0, alpha: 1.0)), //cor fonte do selecionado
             .SelectionIndicatorHeight(2.0), //largura do indicador
             .EnableHorizontalBounce(false), //permitir bounce horizontal na figura
             .ScrollAnimationDurationOnMenuItemTap(400), //velocidade da animacao do movimento em milegundos

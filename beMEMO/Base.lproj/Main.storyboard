@@ -66,11 +66,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxZ-0z-ziB">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxZ-0z-ziB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yIk-A9-bZO">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yIk-A9-bZO">
                                 <rect key="frame" x="177" y="324" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
@@ -82,6 +82,8 @@
                             <constraint firstItem="bxZ-0z-ziB" firstAttribute="top" secondItem="eUG-8p-iu1" secondAttribute="bottom" constant="-64" id="ait-q6-2U1"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="yIk-A9-bZO" id="Dtr-pl-Vy8"/>
                         <outlet property="webView" destination="bxZ-0z-ziB" id="cFy-c6-pys"/>
@@ -147,7 +149,8 @@
         <!--Projetos-->
         <scene sceneID="SMW-oC-BfD">
             <objects>
-                <viewController id="dvh-VM-6QR" customClass="UINavigationController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXP-oM-k22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="dvh-VM-6QR" customClass="ViewControllerteste" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bRi-fU-uz6"/>
                         <viewControllerLayoutGuide type="bottom" id="KKI-4L-TDH"/>
@@ -155,11 +158,10 @@
                     <view key="view" contentMode="scaleToFill" id="WwK-CG-iNx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Projetos" image="Projects" id="9aN-At-0Za"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tXP-oM-k22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="560.5" y="-802.5"/>
         </scene>
@@ -175,13 +177,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="dvh-VM-6QR" kind="relationship" relationship="viewControllers" id="SSM-sg-7aF"/>
-                        <segue destination="vCU-5J-4C2" kind="relationship" relationship="viewControllers" id="7KJ-mS-gEq"/>
                         <segue destination="Fmf-X4-YHr" kind="relationship" relationship="viewControllers" id="eP0-ye-TjB"/>
+                        <segue destination="vCU-5J-4C2" kind="relationship" relationship="viewControllers" id="7KJ-mS-gEq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IrQ-H4-oQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105.5" y="279.5"/>
+            <point key="canvasLocation" x="-119.5" y="279.5"/>
         </scene>
     </scenes>
     <resources>

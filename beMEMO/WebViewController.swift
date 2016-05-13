@@ -14,7 +14,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var webView: UIWebView!
     
     var url: NSURL!
-
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
@@ -23,8 +23,8 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         webView.loadRequest(NSURLRequest(URL: url))
         
         //animacao de carregamento
-        activityIndicator.startAnimating()
-        activityIndicator.hidesWhenStopped = true
+        //activityIndicator.startAnimating()
+        //activityIndicator.hidesWhenStopped = true
         
         webView.delegate = self
         
