@@ -19,10 +19,13 @@ class SobreVC: UIViewController {
         
         // MARK: - UI Setup
         
-        self.navigationItem.title = "Sobre" //titulo
-        self.navigationController?.navigationBar.barTintColor = (UIColor(red: 219.0/255.0, green: 200.0/255.0, blue: 168.0/255.0, alpha: 1.0)) //cor do fundo
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black // cor do texto do status bar - branco
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()] // cor do título
+        self.navigationItem.titleView = UIImageView(image:UIImage(named: "beMEMO")) //imagem no titulo
+        //self.navigationItem.title = "Sobre" //titulo
+        //self.navigationController?.navigationBar.barTintColor = (UIColor(red: 219.0/255.0, green: 180.0/255.0, blue: 120.0/255.0, alpha: 1.0)) //cor do fundo
+        self.navigationController?.navigationBar.barTintColor = (UIColor(red: 249.0/255.0, green: 249.0/255.0, blue: 249.0/255.0, alpha: 1.0)) //cor do fundo
+        //self.navigationController?.navigationBar.barTintColor = UIColor.blackColor() //cor do fundo
+        //self.navigationController?.navigationBar.barStyle = UIBarStyle.Black // cor do texto do status bar - branco
+        //self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()] // cor do título
 
 
         // Array to keep track of controllers in page menu
@@ -34,7 +37,7 @@ class SobreVC: UIViewController {
         // Make sure the title property of all view controllers is set
         // Example:
         let controller1 : UIViewController = UIViewController(nibName: "SobreEmpresaVC", bundle: nil)
-        controller1.title = "Empresa"
+        controller1.title = "A Empresa"
         controllerArray.append(controller1)
         let controller2 : UIViewController = UIViewController(nibName: "SobreTalitaVC", bundle: nil)
         controller2.title = "Talita Dias"
@@ -45,19 +48,19 @@ class SobreVC: UIViewController {
         let parameters: [CAPSPageMenuOption] = [
             .UseMenuLikeSegmentedControl(true),
         
-            .ScrollMenuBackgroundColor(UIColor(red: 219.0/255.0, green: 200.0/255.0, blue: 168.0/255.0, alpha: 0.0)), //cor de fundo
-            .SelectionIndicatorColor(UIColor(red: 65.0/255.0, green: 117.0/255.0, blue: 5.0/255.0, alpha: 1.0)), //cor do indicador
+            .ScrollMenuBackgroundColor(UIColor(red: 249.0/255.0, green: 249.0/255.0, blue: 249.0/255.0, alpha: 1.0)), //cor de fundo
+            .SelectionIndicatorColor(UIColor.blackColor()), //cor do indicador
             .MenuItemFont(UIFont(name: ".SFUIText-Semibold", size: 14.0)!), //fonte
             .MenuHeight(40.0), //altura item
             .MenuItemWidth(90.0), //largura item
             .AddBottomMenuHairline(true), //linha abaixo do indicador
-            .BottomMenuHairlineColor(UIColor(red: 145.0/255.0, green: 145.0/255.0, blue: 145.0/255.0, alpha: 0.8)), //cor da linha do indicador
+            .BottomMenuHairlineColor(UIColor(red: 145.0/255.0, green: 145.0/255.0, blue: 145.0/255.0, alpha: 1.0)), //cor da linha do indicador
             .CenterMenuItems(true), //centralizar itens
             .MenuItemSeparatorPercentageHeight(0.7), //tamamho separador vertical
             .MenuItemSeparatorRoundEdges(true), //limite do separador arredondado
-            .UnselectedMenuItemLabelColor(UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.8)), // cor fonte do nao selecionado
-            .SelectedMenuItemLabelColor(UIColor(red: 65.0/255.0, green: 117.0/255.0, blue: 5.0/255.0, alpha: 1.0)), //cor fonte do selecionado
-            .SelectionIndicatorHeight(2.0), //largura do indicador
+            .UnselectedMenuItemLabelColor(UIColor(red: 145.0/255.0, green: 145.0/255.0, blue: 145.0/255.0, alpha: 1.0)), // cor fonte do nao selecionado
+            .SelectedMenuItemLabelColor(UIColor.blackColor()), //cor fonte do selecionado
+            .SelectionIndicatorHeight(1.0), //largura do indicador
             .EnableHorizontalBounce(false), //permitir bounce horizontal na figura
             .ScrollAnimationDurationOnMenuItemTap(400), //velocidade da animacao do movimento em milegundos
 

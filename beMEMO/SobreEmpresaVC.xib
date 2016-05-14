@@ -18,13 +18,13 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9c-td-MZX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He8-Nk-OpJ">
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="He8-Nk-OpJ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="820"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Empresa" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-dc-AXS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="beMEMO" translatesAutoresizingMaskIntoConstraints="NO" id="LT9-gb-nY7">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="loadingicon" translatesAutoresizingMaskIntoConstraints="NO" id="LT9-gb-nY7">
                                     <rect key="frame" x="111" y="267" width="142" height="24"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="“Seja qual for o seu sonho, que ele seja memorável.”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch7-TT-Zpj">
@@ -96,6 +96,6 @@
     </objects>
     <resources>
         <image name="Empresa" width="375" height="256"/>
-        <image name="beMEMO" width="142" height="25"/>
+        <image name="loadingicon" width="33" height="30"/>
     </resources>
 </document>

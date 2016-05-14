@@ -23,6 +23,8 @@
 		7ECAA70F1CD4203300F30D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */; };
 		7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */; };
 		7EEC13F81CE3CE5D0068D322 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */; };
+		7EEC14051CE65D950068D322 /* CustomActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC14041CE65D950068D322 /* CustomActivityIndicatorView.swift */; };
+		7EEC14071CE69FD10068D322 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC14061CE69FD10068D322 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		7ECAA7101CD4203300F30D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7EEC14041CE65D950068D322 /* CustomActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicatorView.swift; sourceTree = "<group>"; };
+		7EEC14061CE69FD10068D322 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beMEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +94,7 @@
 				7ECAA7061CD4203300F30D2F /* ViewController.swift */,
 				7ECAA7041CD4203300F30D2F /* AppDelegate.swift */,
 				7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */,
+				7EEC14061CE69FD10068D322 /* TabBar.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				7EEC13F31CE2CFDB0068D322 /* WebViewController.swift */,
 				7EBA86411CE12CE4005F0461 /* TableVCContato.swift */,
 				7EBA86431CE12F14005F0461 /* Contato.swift */,
+				7EEC14041CE65D950068D322 /* CustomActivityIndicatorView.swift */,
 			);
 			name = Contato;
 			sourceTree = "<group>";
@@ -126,12 +132,20 @@
 			isa = PBXGroup;
 			children = (
 				7EBA863D1CD42DD4005F0461 /* Base */,
+				7EEC14081CE6BB860068D322 /* Projetos */,
 				7EBA863E1CD456E4005F0461 /* Contato */,
 				7EBA863C1CD42DC7005F0461 /* Sobre */,
 				7ECAA70B1CD4203300F30D2F /* Assets.xcassets */,
 				7ECAA7101CD4203300F30D2F /* Info.plist */,
 			);
 			path = beMEMO;
+			sourceTree = "<group>";
+		};
+		7EEC14081CE6BB860068D322 /* Projetos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Projetos;
 			sourceTree = "<group>";
 		};
 		98D20488A6741A1286DC156A /* Frameworks */ = {
@@ -276,6 +290,8 @@
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
 				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
 				7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */,
+				7EEC14071CE69FD10068D322 /* TabBar.swift in Sources */,
+				7EEC14051CE65D950068D322 /* CustomActivityIndicatorView.swift in Sources */,
 				7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
