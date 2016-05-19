@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */; };
+		7E75FAF71CEE4C1B00B8A395 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */; };
 		7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */; };
 		7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86321CD428BB005F0461 /* SobreVC.swift */; };
 		7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.release.xcconfig"; sourceTree = "<group>"; };
+		7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		7EBA86321CD428BB005F0461 /* SobreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreVC.swift; sourceTree = "<group>"; };
 		7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTalitaVC.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EEC13F81CE3CE5D0068D322 /* MessageUI.framework in Frameworks */,
+				7E75FAF71CEE4C1B00B8A395 /* FBSDKCoreKit.framework in Frameworks */,
 				7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +154,7 @@
 		98D20488A6741A1286DC156A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */,
 				7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */,
 				AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */,
 			);
@@ -408,6 +412,7 @@
 			baseConfigurationReference = A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "\"/Users/Samuel/Projetos IOS/FacebookSDK\"";
 				INFOPLIST_FILE = beMEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -422,6 +427,7 @@
 			baseConfigurationReference = 0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "\"/Users/Samuel/Projetos IOS/FacebookSDK\"";
 				INFOPLIST_FILE = beMEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
