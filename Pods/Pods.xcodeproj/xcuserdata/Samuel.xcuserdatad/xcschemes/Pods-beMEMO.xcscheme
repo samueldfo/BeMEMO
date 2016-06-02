@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AC6652A4180A4CD1197941E5'
+               BlueprintIdentifier = 'B93AE68FF4BF1732B13C205B'
                BlueprintName = 'Pods-beMEMO'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_beMEMO.framework'>

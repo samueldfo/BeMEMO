@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-beMEMO/Firebase.framework"
+  install_framework "Pods-beMEMO/PageMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-beMEMO/Firebase.framework"
+  install_framework "Pods-beMEMO/PageMenu.framework"
 fi

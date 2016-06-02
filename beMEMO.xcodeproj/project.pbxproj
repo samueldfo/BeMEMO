@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */; };
+		7E23CBF21D0089050002E33D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E23CBF11D0089050002E33D /* GoogleService-Info.plist */; };
+		7E2A82851D008F1500844389 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */; };
+		7E2A82871D008F4400844389 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82861D008F4400844389 /* FirebaseDatabase.framework */; };
+		7E2A82891D008F6E00844389 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82881D008F6E00844389 /* FirebaseInstanceID.framework */; };
+		7E2A828B1D008F9500844389 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A828A1D008F9500844389 /* GoogleInterchangeUtilities.framework */; };
+		7E2A828D1D008FA100844389 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A828C1D008FA100844389 /* GoogleUtilities.framework */; };
+		7E2A828F1D008FAC00844389 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A828E1D008FAC00844389 /* GoogleSymbolUtilities.framework */; };
+		7E2A82911D00D57600844389 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */; };
 		7E75FAF71CEE4C1B00B8A395 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */; };
+		7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */; };
+		7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E75FAFA1CEE975300B8A395 /* FBHelper.swift */; };
+		7E75FAFD1CEEB59A00B8A395 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAFC1CEEB59A00B8A395 /* FBSDKShareKit.framework */; };
 		7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */; };
 		7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86321CD428BB005F0461 /* SobreVC.swift */; };
 		7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */; };
@@ -18,7 +29,7 @@
 		7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86411CE12CE4005F0461 /* TableVCContato.swift */; };
 		7EBA86441CE12F14005F0461 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86431CE12F14005F0461 /* Contato.swift */; };
 		7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7041CD4203300F30D2F /* AppDelegate.swift */; };
-		7ECAA7071CD4203300F30D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7061CD4203300F30D2F /* ViewController.swift */; };
+		7ECAA7071CD4203300F30D2F /* TableVCProjetos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */; };
 		7ECAA70A1CD4203300F30D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA7081CD4203300F30D2F /* Main.storyboard */; };
 		7ECAA70C1CD4203300F30D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70B1CD4203300F30D2F /* Assets.xcassets */; };
 		7ECAA70F1CD4203300F30D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */; };
@@ -30,7 +41,18 @@
 
 /* Begin PBXFileReference section */
 		0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.release.xcconfig"; sourceTree = "<group>"; };
+		7E23CBF11D0089050002E33D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		7E2A82861D008F4400844389 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		7E2A82881D008F6E00844389 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		7E2A828A1D008F9500844389 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		7E2A828C1D008FA100844389 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Pods/GoogleUtilities/Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		7E2A828E1D008FAC00844389 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Pods/GoogleSymbolUtilities/Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		7E75FAFA1CEE975300B8A395 /* FBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBHelper.swift; sourceTree = "<group>"; };
+		7E75FAFC1CEEB59A00B8A395 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		7EBA86321CD428BB005F0461 /* SobreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreVC.swift; sourceTree = "<group>"; };
 		7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTalitaVC.swift; sourceTree = "<group>"; };
@@ -41,7 +63,7 @@
 		7EBA86431CE12F14005F0461 /* Contato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		7ECAA7011CD4203300F30D2F /* beMEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beMEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECAA7041CD4203300F30D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7ECAA7061CD4203300F30D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCProjetos.swift; sourceTree = "<group>"; };
 		7ECAA7091CD4203300F30D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ECAA70B1CD4203300F30D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ECAA70E1CD4203300F30D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +81,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2A82911D00D57600844389 /* FBSDKLoginKit.framework in Frameworks */,
+				7E2A828F1D008FAC00844389 /* GoogleSymbolUtilities.framework in Frameworks */,
+				7E2A828D1D008FA100844389 /* GoogleUtilities.framework in Frameworks */,
+				7E2A828B1D008F9500844389 /* GoogleInterchangeUtilities.framework in Frameworks */,
+				7E2A82891D008F6E00844389 /* FirebaseInstanceID.framework in Frameworks */,
+				7E2A82871D008F4400844389 /* FirebaseDatabase.framework in Frameworks */,
+				7E2A82851D008F1500844389 /* FirebaseAnalytics.framework in Frameworks */,
+				7E75FAFD1CEEB59A00B8A395 /* FBSDKShareKit.framework in Frameworks */,
 				7EEC13F81CE3CE5D0068D322 /* MessageUI.framework in Frameworks */,
 				7E75FAF71CEE4C1B00B8A395 /* FBSDKCoreKit.framework in Frameworks */,
 				7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */,
@@ -94,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				7ECAA7081CD4203300F30D2F /* Main.storyboard */,
-				7ECAA7061CD4203300F30D2F /* ViewController.swift */,
 				7ECAA7041CD4203300F30D2F /* AppDelegate.swift */,
 				7ECAA70D1CD4203300F30D2F /* LaunchScreen.storyboard */,
 				7EEC14061CE69FD10068D322 /* TabBar.swift */,
@@ -139,6 +168,7 @@
 				7EBA863E1CD456E4005F0461 /* Contato */,
 				7EBA863C1CD42DC7005F0461 /* Sobre */,
 				7ECAA70B1CD4203300F30D2F /* Assets.xcassets */,
+				7E23CBF11D0089050002E33D /* GoogleService-Info.plist */,
 				7ECAA7101CD4203300F30D2F /* Info.plist */,
 			);
 			path = beMEMO;
@@ -147,6 +177,9 @@
 		7EEC14081CE6BB860068D322 /* Projetos */ = {
 			isa = PBXGroup;
 			children = (
+				7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */,
+				7E75FAFA1CEE975300B8A395 /* FBHelper.swift */,
+				7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */,
 			);
 			name = Projetos;
 			sourceTree = "<group>";
@@ -154,6 +187,14 @@
 		98D20488A6741A1286DC156A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */,
+				7E2A828E1D008FAC00844389 /* GoogleSymbolUtilities.framework */,
+				7E2A828C1D008FA100844389 /* GoogleUtilities.framework */,
+				7E2A828A1D008F9500844389 /* GoogleInterchangeUtilities.framework */,
+				7E2A82881D008F6E00844389 /* FirebaseInstanceID.framework */,
+				7E2A82861D008F4400844389 /* FirebaseDatabase.framework */,
+				7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */,
+				7E75FAFC1CEEB59A00B8A395 /* FBSDKShareKit.framework */,
 				7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */,
 				7EEC13F71CE3CE5D0068D322 /* MessageUI.framework */,
 				AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */,
@@ -228,6 +269,7 @@
 				7EBA863B1CD42978005F0461 /* SobreEmpresaVC.xib in Resources */,
 				7ECAA70C1CD4203300F30D2F /* Assets.xcassets in Resources */,
 				7ECAA70A1CD4203300F30D2F /* Main.storyboard in Resources */,
+				7E23CBF21D0089050002E33D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */,
-				7ECAA7071CD4203300F30D2F /* ViewController.swift in Sources */,
+				7ECAA7071CD4203300F30D2F /* TableVCProjetos.swift in Sources */,
+				7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */,
 				7EBA86441CE12F14005F0461 /* Contato.swift in Sources */,
+				7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */,
 				7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */,
 				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
@@ -412,7 +456,16 @@
 			baseConfigurationReference = A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "\"/Users/Samuel/Projetos IOS/FacebookSDK\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/Samuel/Projetos,
+					IOS/FacebookSDK,
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseDatabase/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseInstanceID/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks",
+				);
 				INFOPLIST_FILE = beMEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,7 +480,16 @@
 			baseConfigurationReference = 0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "\"/Users/Samuel/Projetos IOS/FacebookSDK\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/Samuel/Projetos,
+					IOS/FacebookSDK,
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseDatabase/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseInstanceID/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks",
+				);
 				INFOPLIST_FILE = beMEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

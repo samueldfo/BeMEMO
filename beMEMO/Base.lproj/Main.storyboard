@@ -30,6 +30,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="iIq-e5-LgG" id="F5Z-6n-JsN"/>
                                     <outlet property="delegate" destination="iIq-e5-LgG" id="cFj-ZQ-1mS"/>
@@ -130,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="462.5" y="279.5"/>
         </scene>
-        <!--View Controller-->
+        <!--TableVC Projetos-->
         <scene sceneID="Kfs-rP-oTx">
             <objects>
-                <viewController id="gce-Ds-Kdc" sceneMemberID="viewController">
+                <viewController id="gce-Ds-Kdc" customClass="TableVCProjetos" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x4D-AA-6IM"/>
                         <viewControllerLayoutGuide type="bottom" id="JLy-jd-rTe"/>
@@ -141,9 +142,32 @@
                     <view key="view" contentMode="scaleToFill" id="kyq-LA-3AN">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5xL-VB-qj3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="wc1-Co-pF8">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wc1-Co-pF8" id="RdG-df-eFm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gce-Ds-Kdc" id="ByM-m2-hra"/>
+                                    <outlet property="delegate" destination="gce-Ds-Kdc" id="hcl-7f-gkx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bW4-fh-jTv"/>
+                    <connections>
+                        <outlet property="ProjetosTableView" destination="5xL-VB-qj3" id="rsy-Mk-LwL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66u-By-vj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

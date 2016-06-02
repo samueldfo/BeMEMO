@@ -5,9 +5,9 @@ use_frameworks!
 
 target 'beMEMO' do
 
-pod 'Firebase', '>= 2.5.1'
-
-pod 'PageMenu'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
 
 end
 
