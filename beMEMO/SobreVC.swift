@@ -22,7 +22,7 @@ class SobreVC: UIViewController {
         self.navigationItem.titleView = UIImageView(image:UIImage(named: "beMEMO")) //imagem no titulo
         //self.navigationItem.title = "Sobre" //titulo
         //self.navigationController?.navigationBar.barTintColor = (UIColor(red: 219.0/255.0, green: 180.0/255.0, blue: 120.0/255.0, alpha: 1.0)) //cor do fundo
-        self.navigationController?.navigationBar.barTintColor = (UIColor(red: 249.0/255.0, green: 249.0/255.0, blue: 249.0/255.0, alpha: 1.0)) //cor do fundo
+        self.navigationController?.navigationBar.barTintColor = (UIColor(red: 249.0/255.0, green: 246.0/255.0, blue: 235.0/255.0, alpha: 1.0)) //cor do fundo
         //self.navigationController?.navigationBar.barTintColor = UIColor.blackColor() //cor do fundo
         //self.navigationController?.navigationBar.barStyle = UIBarStyle.Black // cor do texto do status bar - branco
         //self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()] // cor do título
@@ -48,7 +48,7 @@ class SobreVC: UIViewController {
         let parameters: [CAPSPageMenuOption] = [
             .UseMenuLikeSegmentedControl(true),
         
-            .ScrollMenuBackgroundColor(UIColor(red: 249.0/255.0, green: 249.0/255.0, blue: 249.0/255.0, alpha: 1.0)), //cor de fundo
+            .ScrollMenuBackgroundColor(UIColor(red: 249.0/255.0, green: 246.0/255.0, blue: 235.0/255.0, alpha: 1.0)), //cor de fundo
             .SelectionIndicatorColor(UIColor.blackColor()), //cor do indicador
             .MenuItemFont(UIFont(name: ".SFUIText-Semibold", size: 14.0)!), //fonte
             .MenuHeight(40.0), //altura item
@@ -60,7 +60,7 @@ class SobreVC: UIViewController {
             .MenuItemSeparatorRoundEdges(true), //limite do separador arredondado
             .UnselectedMenuItemLabelColor(UIColor(red: 145.0/255.0, green: 145.0/255.0, blue: 145.0/255.0, alpha: 1.0)), // cor fonte do nao selecionado
             .SelectedMenuItemLabelColor(UIColor.blackColor()), //cor fonte do selecionado
-            .SelectionIndicatorHeight(1.0), //largura do indicador
+            .SelectionIndicatorHeight(2.0), //largura do indicador
             .EnableHorizontalBounce(false), //permitir bounce horizontal na figura
             .ScrollAnimationDurationOnMenuItemTap(400), //velocidade da animacao do movimento em milegundos
 

@@ -8,16 +8,13 @@
 
 import Foundation
 
-
 class AlbumModel{
     var name = ""
     var link = ""
     var cover = ""
-    
-    init(name: String, link:String, cover:String) {
+    init(name:String, link:String, cover:String){
         self.name = name
         self.link = link
         self.cover = cover
     }
-    
 }

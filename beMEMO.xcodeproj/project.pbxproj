@@ -15,11 +15,18 @@
 		7E2A828B1D008F9500844389 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A828A1D008F9500844389 /* GoogleInterchangeUtilities.framework */; };
 		7E2A828D1D008FA100844389 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A828C1D008FA100844389 /* GoogleUtilities.framework */; };
 		7E2A828F1D008FAC00844389 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A828E1D008FAC00844389 /* GoogleSymbolUtilities.framework */; };
-		7E2A82911D00D57600844389 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */; };
-		7E75FAF71CEE4C1B00B8A395 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */; };
+		7E2A82921D00DDE000844389 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */; };
+		7E2A82931D00DDE000844389 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */; };
+		7E2A82941D00DDE000844389 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAFC1CEEB59A00B8A395 /* FBSDKShareKit.framework */; };
+		7E2A82961D00DE4400844389 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82951D00DE4400844389 /* FirebaseAuth.framework */; };
+		7E2A82981D00DE8400844389 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82971D00DE8400844389 /* GoogleNetworkingUtilities.framework */; };
+		7E2A829B1D01405D00844389 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A829A1D01405D00844389 /* LoginVC.swift */; };
+		7E2A82A71D0235F400844389 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82A61D0235F400844389 /* Album.swift */; };
+		7E2A82A91D02362600844389 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82A81D02362600844389 /* AlbumList.swift */; };
+		7E2A82AB1D02369500844389 /* GraphApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82AA1D02369500844389 /* GraphApi.swift */; };
+		7E2A82AD1D0236FE00844389 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82AC1D0236FE00844389 /* Photo.swift */; };
 		7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */; };
 		7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E75FAFA1CEE975300B8A395 /* FBHelper.swift */; };
-		7E75FAFD1CEEB59A00B8A395 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E75FAFC1CEEB59A00B8A395 /* FBSDKShareKit.framework */; };
 		7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */; };
 		7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86321CD428BB005F0461 /* SobreVC.swift */; };
 		7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */; };
@@ -49,6 +56,13 @@
 		7E2A828C1D008FA100844389 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Pods/GoogleUtilities/Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		7E2A828E1D008FAC00844389 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Pods/GoogleSymbolUtilities/Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7E2A82951D00DE4400844389 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		7E2A82971D00DE8400844389 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Pods/GoogleNetworkingUtilities/Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		7E2A829A1D01405D00844389 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7E2A82A61D0235F400844389 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		7E2A82A81D02362600844389 /* AlbumList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumList.swift; sourceTree = "<group>"; };
+		7E2A82AA1D02369500844389 /* GraphApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphApi.swift; sourceTree = "<group>"; };
+		7E2A82AC1D0236FE00844389 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		7E75FAFA1CEE975300B8A395 /* FBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBHelper.swift; sourceTree = "<group>"; };
@@ -81,16 +95,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E2A82911D00D57600844389 /* FBSDKLoginKit.framework in Frameworks */,
+				7E2A82981D00DE8400844389 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				7E2A82961D00DE4400844389 /* FirebaseAuth.framework in Frameworks */,
+				7E2A82921D00DDE000844389 /* FBSDKCoreKit.framework in Frameworks */,
+				7E2A82931D00DDE000844389 /* FBSDKLoginKit.framework in Frameworks */,
+				7E2A82941D00DDE000844389 /* FBSDKShareKit.framework in Frameworks */,
 				7E2A828F1D008FAC00844389 /* GoogleSymbolUtilities.framework in Frameworks */,
 				7E2A828D1D008FA100844389 /* GoogleUtilities.framework in Frameworks */,
 				7E2A828B1D008F9500844389 /* GoogleInterchangeUtilities.framework in Frameworks */,
 				7E2A82891D008F6E00844389 /* FirebaseInstanceID.framework in Frameworks */,
 				7E2A82871D008F4400844389 /* FirebaseDatabase.framework in Frameworks */,
 				7E2A82851D008F1500844389 /* FirebaseAnalytics.framework in Frameworks */,
-				7E75FAFD1CEEB59A00B8A395 /* FBSDKShareKit.framework in Frameworks */,
 				7EEC13F81CE3CE5D0068D322 /* MessageUI.framework in Frameworks */,
-				7E75FAF71CEE4C1B00B8A395 /* FBSDKCoreKit.framework in Frameworks */,
 				7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +121,14 @@
 				0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E2A82991D01403000844389 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A829A1D01405D00844389 /* LoginVC.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		7EBA863C1CD42DC7005F0461 /* Sobre */ = {
@@ -164,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				7EBA863D1CD42DD4005F0461 /* Base */,
+				7E2A82991D01403000844389 /* Login */,
 				7EEC14081CE6BB860068D322 /* Projetos */,
 				7EBA863E1CD456E4005F0461 /* Contato */,
 				7EBA863C1CD42DC7005F0461 /* Sobre */,
@@ -179,7 +204,11 @@
 			children = (
 				7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */,
 				7E75FAFA1CEE975300B8A395 /* FBHelper.swift */,
+				7E2A82A61D0235F400844389 /* Album.swift */,
 				7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */,
+				7E2A82A81D02362600844389 /* AlbumList.swift */,
+				7E2A82AA1D02369500844389 /* GraphApi.swift */,
+				7E2A82AC1D0236FE00844389 /* Photo.swift */,
 			);
 			name = Projetos;
 			sourceTree = "<group>";
@@ -187,6 +216,8 @@
 		98D20488A6741A1286DC156A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E2A82971D00DE8400844389 /* GoogleNetworkingUtilities.framework */,
+				7E2A82951D00DE4400844389 /* FirebaseAuth.framework */,
 				7E2A82901D00D57600844389 /* FBSDKLoginKit.framework */,
 				7E2A828E1D008FAC00844389 /* GoogleSymbolUtilities.framework */,
 				7E2A828C1D008FA100844389 /* GoogleUtilities.framework */,
@@ -330,17 +361,22 @@
 			files = (
 				7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */,
 				7ECAA7071CD4203300F30D2F /* TableVCProjetos.swift in Sources */,
+				7E2A829B1D01405D00844389 /* LoginVC.swift in Sources */,
 				7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */,
 				7EBA86441CE12F14005F0461 /* Contato.swift in Sources */,
 				7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */,
 				7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */,
+				7E2A82A91D02362600844389 /* AlbumList.swift in Sources */,
 				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
+				7E2A82AB1D02369500844389 /* GraphApi.swift in Sources */,
 				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
+				7E2A82AD1D0236FE00844389 /* Photo.swift in Sources */,
 				7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */,
 				7EEC14071CE69FD10068D322 /* TabBar.swift in Sources */,
 				7EEC14051CE65D950068D322 /* CustomActivityIndicatorView.swift in Sources */,
 				7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */,
+				7E2A82A71D0235F400844389 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +501,8 @@
 					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks",
 					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
 					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseAuth/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleNetworkingUtilities/Frameworks",
 				);
 				INFOPLIST_FILE = beMEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -489,6 +527,8 @@
 					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks",
 					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
 					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseAuth/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleNetworkingUtilities/Frameworks",
 				);
 				INFOPLIST_FILE = beMEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;

@@ -5,9 +5,13 @@ use_frameworks!
 
 target 'beMEMO' do
 
-pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Firebase/Core'
 pod 'Firebase/Auth'
+
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
 
 end
 

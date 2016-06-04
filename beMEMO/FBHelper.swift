@@ -6,6 +6,11 @@
 //  Copyright © 2016 samueldfo. All rights reserved.
 //
 
+// FBHelper.swift
+// FBApp
+//
+// Created by Md. Arifuzzaman Arif on 7/4/14.
+// Copyright (c) 2014 Md. Arifuzzaman Arif. All rights reserved.
 
 import Foundation
 import FBSDKCoreKit
@@ -32,20 +37,23 @@ class FBHelper{
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
                     
                     //println(data)
-                    var pictures:[UIImage] = [UIImage]();
-                    let graphData = data.valueForKey("data") as! NSArray;
-                    var albums:[AlbumModel] = [AlbumModel]();
+                    var pictures:[UIImage] = [UIImage]()
+                    let graphData: NSArray = data.valueForKey("data") as! NSArray
+                    var albums:[AlbumModel] = [AlbumModel]()
                     
-                    for obj in graphData{
-                        print(obj.description)
+                    for obj:AnyObject in graphData{
+                        //print(obj.description)
+                        //print(obj)
+                        
                         let pictureURL = obj.valueForKey("picture") as! String
                         let url = NSURL(string: pictureURL)
                         let picData = NSData(contentsOfURL: url!)
                         let img = UIImage(data: picData!)
                         
                         pictures.append(img!)
+
                     }
-                    NSNotificationCenter.defaultCenter().postNotificationName("photoNotification", object: nil, userInfo: nil);
+                    NSNotificationCenter.defaultCenter().postNotificationName("photoNotification", object: nil, userInfo: nil)
                 })
                 
             }
@@ -53,19 +61,19 @@ class FBHelper{
         
     }
     
+    
     func fetchCoverPhoto(coverLink: String, completion:(image:UIImage)->()){
-        
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
             
-
-            let userImageURL = "(self.baseUrl)(coverLink)?type=album&access_token=(self.accessToken!.tokenString)";
+            //http://graph.facebook.com/v2.4/10150192451235958/picture?type=thumbnail
+            let userImageURL = "(self.baseUrl)(coverLink)?type=album&access_token=(self.accessToken!.tokenString)"
             
-            let url = NSURL(string: userImageURL);
+            let url = NSURL(string: userImageURL)
             
-            let imageData = NSData(contentsOfURL: url!);
+            let imageData = NSData(contentsOfURL: url!)
             
             if let imageDataHas = imageData{
-                let image = UIImage(data: imageData!);
+                let image = UIImage(data: imageData!)
                 
                 completion(image: image!)
             }
@@ -76,46 +84,40 @@ class FBHelper{
     
     func fetchAlbum(){
         
-        //let userImageURL = "(self.baseUrl)/1175201752496503/albums?access_token=1041459045935463|xiPlfCmFBTHZ_f--kX725Wqe6w4";
+        let userImageURL = "(self.baseUrl)1175201752496503/albums?access_token=(self.accessToken!.tokenString)"
         
-        let graphPath = "1175201752496503/albums";
-        let request = FBSDKGraphRequest(graphPath: graphPath, parameters: ["fields": "name, id"], HTTPMethod: "GET")
+        let graphPath = "/1175201752496503/albums"
+        let request = FBSDKGraphRequest(graphPath: graphPath, parameters: nil, HTTPMethod: "GET")
         request.startWithCompletionHandler { (connection:FBSDKGraphRequestConnection!, result:AnyObject!, error:NSError!) -> Void in
             if let gotError = error{
-                
-                print(gotError.description);
-            
+                print(gotError.description)
             }
             else{
-                
-                print(result)
-                
-                let graphData = result.valueForKey("data") as! NSArray;
-                
-                var albums:[AlbumModel] = [AlbumModel]();
-                
+                //print(result)
+                let graphData = result.valueForKey("data") as! NSArray
+                var albums:[AlbumModel] = [AlbumModel]()
                 for obj:AnyObject in graphData{
-                    let desc = obj.message;
-                    //print(message);
-                    let name = obj.valueForKey("name") as! String;
-                    //print(name);
-                    let id = obj.valueForKey("id") as! String;
+                    let desc = obj.description
+                    //print(desc)
+                    let name = obj.valueForKey("name") as! String
+                    //print(name)
                     
-                    var cover = "";
-                    cover = "(id)/picture";
-                    //print(coverLink);
+                    let id = obj.valueForKey("id") as! String
+                    //print(id)
                     
-                    let link = "(id)/photos";
+                    let cover = "/\(id)/picture"
+                    //print(cover)
                     
-                    let model = AlbumModel(name: name, link: link, cover:cover);
-                    albums.append(model);
+                    let link = "/\(id)/photos"
+                    //print(link)
+                    
+                    let model = AlbumModel(name: name, link: link, cover:cover)
+                    albums.append(model)
+                    //print(albums)
                     
                 }
-                NSNotificationCenter.defaultCenter().postNotificationName("albumNotification", object: nil, userInfo: ["data":albums]);
+                NSNotificationCenter.defaultCenter().postNotificationName("albumNotification", object: nil, userInfo: ["data":albums])
             }
         }
     }
-    
-    
 }
-

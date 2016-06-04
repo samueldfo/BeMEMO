@@ -84,8 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-beMEMO/PageMenu.framework"
+  install_framework "Pods-beMEMO/Bolts.framework"
+  install_framework "Pods-beMEMO/FBSDKCoreKit.framework"
+  install_framework "Pods-beMEMO/FBSDKLoginKit.framework"
+  install_framework "Pods-beMEMO/FBSDKShareKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-beMEMO/PageMenu.framework"
+  install_framework "Pods-beMEMO/Bolts.framework"
+  install_framework "Pods-beMEMO/FBSDKCoreKit.framework"
+  install_framework "Pods-beMEMO/FBSDKLoginKit.framework"
+  install_framework "Pods-beMEMO/FBSDKShareKit.framework"
 fi

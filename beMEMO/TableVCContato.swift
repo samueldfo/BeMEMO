@@ -22,7 +22,7 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
         //customização do navigation menu
         self.navigationItem.titleView = UIImageView(image:UIImage(named: "beMEMO")) //imagem no titulo
         //self.navigationController?.navigationBar.barTintColor = (UIColor(red: 219.0/255.0, green: 180.0/255.0, blue: 120.0/255.0, alpha: 1.0)) //cor do fundo
-        self.navigationController?.navigationBar.barTintColor = (UIColor(red: 249.0/255.0, green: 249.0/255.0, blue: 249.0/255.0, alpha: 1.0)) //cor do fundo
+        self.navigationController?.navigationBar.barTintColor = (UIColor(red: 249.0/255.0, green: 246.0/255.0, blue: 235.0/255.0, alpha: 1.0)) //cor do fundo
         //self.navigationController?.navigationBar.barStyle = UIBarStyle.Black // cor do texto do status bar - branco
         //self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()] // cor do título
         
