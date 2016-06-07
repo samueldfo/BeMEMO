@@ -30,7 +30,7 @@ class LoginVC: UIViewController {
         } else {
             print("Loged in...")
             
-            var initialViewController = self.storyboard!.instantiateViewControllerWithIdentifier("TabbarVC") as! UIViewController
+            let initialViewController = self.storyboard!.instantiateViewControllerWithIdentifier("TabbarVC")
             appDelegate.window?.rootViewController = initialViewController
             appDelegate.window?.makeKeyAndVisible()
             
