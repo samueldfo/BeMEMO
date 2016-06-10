@@ -13,19 +13,41 @@ import Firebase
 
 class LoginVC: UIViewController {
     
+    @IBOutlet weak var LoginView: UIView!
+
+    @IBAction func contatobutton(sender: AnyObject) {
+        performSegueWithIdentifier("contatosegue", sender: self)
+    }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "contatosegue"){
+            let tabVC = segue.destinationViewController as! UITabBarController
+            tabVC.selectedIndex = 2
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        let appDelegate = UIApplication.sharedApplication().delegate! as! AppDelegate
+        let LVxPosition = LoginView.frame.origin.x
+        let LVyPosition = LoginView.frame.origin.y - 320
+        let LVheight = LoginView.frame.size.height
+        let LVwidth = LoginView.frame.size.width
         
+        UIView.animateWithDuration(0.6, animations: {
+            
+            self.LoginView.frame = CGRectMake(LVxPosition, LVyPosition, LVheight, LVwidth)
+            
+        })
+        
+        let appDelegate = UIApplication.sharedApplication().delegate! as! AppDelegate
         
         if (FBSDKAccessToken.currentAccessToken() == nil) {
             print("Not loged in..")
             
+            //logintext.text = "Mal podemos esperar para compartilhar com você nossos projetos e inspirações e quem sabe trabalharmos juntos para que o seu evento seja memorável.\n\nPara isso, realize o login no facebook.\n\nNão se preocupe, pois não postaremos nada sem a sua permissão."
             
         } else {
             print("Loged in...")

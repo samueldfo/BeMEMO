@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 
 class TableVCProjetos: UIViewController {
@@ -24,7 +25,19 @@ class TableVCProjetos: UIViewController {
         self.navigationItem.titleView = UIImageView(image:UIImage(named: "beMEMO")) //imagem no titulo
         self.navigationController?.navigationBar.barTintColor = (UIColor(red: 249.0/255.0, green: 246.0/255.0, blue: 235.0/255.0, alpha: 1.0)) //cor do fundo
         
+        
+        if (FBSDKAccessToken.currentAccessToken() == nil) {
+            print("Not loged in..")
+            
+            performSegueWithIdentifier("notlogsegue", sender: self)
+            
+            
+        } else {
+            print("Loged in...")
+        
         graphApi.fetchAlbums(albumsHandler)
+            
+        }
         
     }
     
