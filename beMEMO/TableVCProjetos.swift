@@ -40,6 +40,8 @@ class TableVCProjetos: UIViewController {
         }
         
     }
+
+    
     
     func albumsHandler(albums: [Album]) {
         self.albums = albums

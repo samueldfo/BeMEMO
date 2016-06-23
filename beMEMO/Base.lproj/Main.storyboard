@@ -134,7 +134,7 @@
         <!--LoginVC-->
         <scene sceneID="vKs-yI-CTe">
             <objects>
-                <viewController storyboardIdentifier="loginVC" title="LoginVC" id="uyg-np-9zo" customClass="LoginVC" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" title="LoginVC" extendedLayoutIncludesOpaqueBars="YES" id="uyg-np-9zo" customClass="LoginVC" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1CZ-7q-FjO"/>
                         <viewControllerLayoutGuide type="bottom" id="hyL-FA-zKq"/>
@@ -179,9 +179,9 @@ Para isso, realize o login no facebook.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mw-GM-yWh">
-                                        <rect key="frame" x="125" y="297" width="124" height="30"/>
+                                        <rect key="frame" x="125" y="307" width="124" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                        <state key="normal" title="Pular para contato">
+                                        <state key="normal" title="Pular">
                                             <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -201,7 +201,7 @@ Para isso, realize o login no facebook.</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.96470588239999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="4mw-GM-yWh" firstAttribute="top" secondItem="Fir-YW-s7Q" secondAttribute="bottom" constant="26" id="CWO-t3-xYu"/>
+                                    <constraint firstItem="4mw-GM-yWh" firstAttribute="top" secondItem="Fir-YW-s7Q" secondAttribute="bottom" constant="36" id="CWO-t3-xYu"/>
                                     <constraint firstItem="Fir-YW-s7Q" firstAttribute="leading" secondItem="QsQ-ey-Uz0" secondAttribute="leading" constant="27" id="D6s-Bk-q1I"/>
                                     <constraint firstItem="udV-8o-hFb" firstAttribute="leading" secondItem="QsQ-ey-Uz0" secondAttribute="leading" constant="30" id="EAt-cA-hh8"/>
                                     <constraint firstItem="Fir-YW-s7Q" firstAttribute="centerX" secondItem="plf-c7-k6x" secondAttribute="centerX" id="G0z-uy-bAc"/>
@@ -279,7 +279,7 @@ Para isso, realize o login no facebook.</string>
                     <navigationItem key="navigationItem" id="bW4-fh-jTv"/>
                     <connections>
                         <outlet property="ProjetosTableView" destination="5xL-VB-qj3" id="rsy-Mk-LwL"/>
-                        <segue destination="uyg-np-9zo" kind="modal" identifier="notlogsegue" id="EDa-sT-gpv"/>
+                        <segue destination="uyg-np-9zo" kind="presentation" identifier="notlogsegue" modalPresentationStyle="currentContext" id="EDa-sT-gpv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66u-By-vj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
