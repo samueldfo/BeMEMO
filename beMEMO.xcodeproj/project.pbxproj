@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */; };
+		7E12EA791D21B15200009845 /* SubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E12EA781D21B15200009845 /* SubTableViewCell.swift */; };
 		7E23CBF21D0089050002E33D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E23CBF11D0089050002E33D /* GoogleService-Info.plist */; };
 		7E2A82851D008F1500844389 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */; };
 		7E2A82871D008F4400844389 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82861D008F4400844389 /* FirebaseDatabase.framework */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.release.xcconfig"; sourceTree = "<group>"; };
+		7E12EA781D21B15200009845 /* SubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTableViewCell.swift; sourceTree = "<group>"; };
 		7E23CBF11D0089050002E33D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		7E2A82861D008F4400844389 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				7E75FAFA1CEE975300B8A395 /* FBHelper.swift */,
 				7E2A82A61D0235F400844389 /* Album.swift */,
 				7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */,
+				7E12EA781D21B15200009845 /* SubTableViewCell.swift */,
 				7E2A82A81D02362600844389 /* AlbumList.swift */,
 				7E2A82AA1D02369500844389 /* GraphApi.swift */,
 				7E2A82AC1D0236FE00844389 /* Photo.swift */,
@@ -362,6 +365,7 @@
 				7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */,
 				7ECAA7071CD4203300F30D2F /* TableVCProjetos.swift in Sources */,
 				7E2A829B1D01405D00844389 /* LoginVC.swift in Sources */,
+				7E12EA791D21B15200009845 /* SubTableViewCell.swift in Sources */,
 				7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */,
 				7EBA86441CE12F14005F0461 /* Contato.swift in Sources */,
 				7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */,

@@ -13,6 +13,7 @@ import FBSDKLoginKit
 class TableVCProjetos: UIViewController {
 
     @IBOutlet weak var ProjetosTableView: UITableView!
+
     
     var graphApi: GraphApi = GraphApi()
     var albums: [Album] = []
@@ -20,6 +21,8 @@ class TableVCProjetos: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.ProjetosTableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         //customização do navigation menu
         self.navigationItem.titleView = UIImageView(image:UIImage(named: "beMEMO")) //imagem no titulo
@@ -68,17 +71,19 @@ class TableVCProjetos: UIViewController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("AlbumCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("AlbumCell", forIndexPath: indexPath) as! SubTableViewCell
         // Configure the cell...
         
             let data = albums[indexPath.row]
-            cell.textLabel!.text = data.name
+            cell.heading.text = data.name
             
         if (data.cover != ""){
          let coverPhotoURL = NSURL(string: data.cover!)
          let coverPhotoData = NSData(contentsOfURL: coverPhotoURL!)
          
-         cell.imageView!.image = UIImage(data: coverPhotoData!)
+            let image = UIImage(data: coverPhotoData!)
+            cell.bkimage.image = image
+        
         }
         return cell
         

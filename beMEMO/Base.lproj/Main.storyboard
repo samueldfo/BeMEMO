@@ -255,17 +255,43 @@ Para isso, realize o login no facebook.</string>
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5xL-VB-qj3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5xL-VB-qj3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="wc1-Co-pF8">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="210" id="wc1-Co-pF8" customClass="SubTableViewCell" customModule="beMEMO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wc1-Co-pF8" id="RdG-df-eFm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-VI-SGe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="210" id="iyg-Rx-WQX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXB-0Z-fGM">
+                                                    <rect key="frame" x="20" y="172" width="306" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Disclosure Indicator" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-SU-LrS">
+                                                    <rect key="frame" x="334" y="172" width="33" height="21"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DMJ-VI-SGe" firstAttribute="top" secondItem="RdG-df-eFm" secondAttribute="top" id="JFs-BM-XrF"/>
+                                                <constraint firstAttribute="trailing" secondItem="DMJ-VI-SGe" secondAttribute="trailing" id="SPs-iv-6Us"/>
+                                                <constraint firstItem="DMJ-VI-SGe" firstAttribute="leading" secondItem="RdG-df-eFm" secondAttribute="leading" id="dcA-gl-upW"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bkimage" destination="DMJ-VI-SGe" id="ng9-JY-9Ax"/>
+                                            <outlet property="heading" destination="wXB-0Z-fGM" id="1l9-qC-UCP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -328,6 +354,7 @@ Para isso, realize o login no facebook.</string>
     </scenes>
     <resources>
         <image name="Contato" width="24" height="24"/>
+        <image name="Disclosure Indicator" width="16" height="26"/>
         <image name="Facebook Login" width="325" height="50"/>
         <image name="Fundo Loading" width="375" height="667"/>
         <image name="Projects" width="24" height="24"/>
