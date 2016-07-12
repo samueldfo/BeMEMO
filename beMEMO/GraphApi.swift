@@ -18,6 +18,8 @@ class GraphApi {
     
     let PHOTO_COVER_PARAMETERS = ["fields": "picture{url}"]
     
+    let ALBUM_COVER_PARAMETERS = ["fields": "cover_photo.fields(images)"]
+    
     //me profile picture
     func fetchMeProfilePicture(handler: (String -> Void)) {
         
@@ -77,13 +79,10 @@ class GraphApi {
                         cover: coverData["url"] as? String)
                         
                     albums.append(album)
-                    print(albums)
+                    //print(albums)
                         }
                     }
                 }
-            }
-            
-            if let paging = albumsJson["paging"] as? NSDictionary {
                 
             }
         }
@@ -122,12 +121,46 @@ class GraphApi {
                 }
             }
             
-            if let paging = photosJson["paging"] as? NSDictionary {
-                
-            }
         }
         return photos
     }
+    
+    
+    
+    func fetchCoverPhotos(albumid: String, handler: ([Image] -> Void)) {
+        let request =  FBSDKGraphRequest(graphPath: "\(albumid)", parameters: ALBUM_COVER_PARAMETERS)
+        request.startWithCompletionHandler({(connection: FBSDKGraphRequestConnection!, result: AnyObject!, error: NSError!) -> Void in
+            if error != nil {
+                print("\(error.localizedDescription)")
+            } else {
+                handler(self.parseCovers(result))
+            }
+            
+        })
+    }
+    
+    func parseCovers(result: AnyObject!) -> [Image] {
+        var covers = [Image]()
+        if let coversJson = result as? NSDictionary {
+            if let dataJson = coversJson["data"] as? NSArray {
+                for coverJson in dataJson {
+                    //print("\(coverJson)")
+                    let cover = Image(
+                        height: coverJson["height"] as? Int,
+                        source: coverJson["source"] as? String,
+                        width: coverJson["width"] as? Int)
+                    covers.append(cover)
+                }
+            }
+            
+        }
+        return covers
+    }
+
+    
+    
+    
+    
     
     
 }

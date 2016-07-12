@@ -17,6 +17,8 @@ class TableVCProjetos: UIViewController {
     
     var graphApi: GraphApi = GraphApi()
     var albums: [Album] = []
+    var album: Album?
+    var covers: [Image] = []
     var selectedAlbum: Album?
     
     override func viewDidLoad() {
@@ -40,12 +42,18 @@ class TableVCProjetos: UIViewController {
         
         graphApi.fetchAlbums(albumsHandler)
             
+            /*print(albums.count)
+            
+            if let currentAlbum = album {
+                if let albumId = currentAlbum.id {
+                    graphApi.fetchCoverPhotos(albumId, handler: CoverPhotosHandler)
+                }
+            }
+        */
         }
-        
-    }
+     
+        }
 
-    
-    
     func albumsHandler(albums: [Album]) {
         self.albums = albums
         //print("\(self.albums)")
@@ -53,6 +61,16 @@ class TableVCProjetos: UIViewController {
             self.ProjetosTableView.reloadData()
         })
     }
+    
+    /*func CoverPhotosHandler(covers: [Image]) {
+            self.covers = covers
+            //print("\(self.covers)")
+            dispatch_async(dispatch_get_main_queue(), {
+                self.ProjetosTableView.reloadData()
+            })
+            
+ 
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -76,15 +94,27 @@ class TableVCProjetos: UIViewController {
         
             let data = albums[indexPath.row]
             cell.heading.text = data.name
-            
-        if (data.cover != ""){
-         let coverPhotoURL = NSURL(string: data.cover!)
-         let coverPhotoData = NSData(contentsOfURL: coverPhotoURL!)
-         
-            let image = UIImage(data: coverPhotoData!)
-            cell.bkimage.image = image
         
-        }
+            if (data.cover != ""){
+                let coverPhotoURL = NSURL(string: data.cover!)
+                let coverPhotoData = NSData(contentsOfURL: coverPhotoURL!)
+         
+                let image = UIImage(data: coverPhotoData!)
+                cell.bkimage.image = image
+            }
+        
+            /*let cover = covers[indexPath.row]
+        
+            if (cover.source != ""){
+                let coverURL = NSURL(string: cover.source!)
+                let coverData = NSData(contentsOfURL: coverURL!)
+                    
+                    let image = UIImage(data: coverData!)
+                    cell.bkimage.image = image
+                    
+            
+            
+        }*/
         return cell
         
     }

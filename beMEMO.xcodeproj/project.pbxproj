@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */; };
 		7E12EA791D21B15200009845 /* SubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E12EA781D21B15200009845 /* SubTableViewCell.swift */; };
+		7E12EA7D1D22FFA400009845 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E12EA7C1D22FFA400009845 /* Image.swift */; };
 		7E23CBF21D0089050002E33D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E23CBF11D0089050002E33D /* GoogleService-Info.plist */; };
 		7E2A82851D008F1500844389 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */; };
 		7E2A82871D008F4400844389 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82861D008F4400844389 /* FirebaseDatabase.framework */; };
@@ -23,11 +24,8 @@
 		7E2A82981D00DE8400844389 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82971D00DE8400844389 /* GoogleNetworkingUtilities.framework */; };
 		7E2A829B1D01405D00844389 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A829A1D01405D00844389 /* LoginVC.swift */; };
 		7E2A82A71D0235F400844389 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82A61D0235F400844389 /* Album.swift */; };
-		7E2A82A91D02362600844389 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82A81D02362600844389 /* AlbumList.swift */; };
 		7E2A82AB1D02369500844389 /* GraphApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82AA1D02369500844389 /* GraphApi.swift */; };
 		7E2A82AD1D0236FE00844389 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A82AC1D0236FE00844389 /* Photo.swift */; };
-		7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */; };
-		7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E75FAFA1CEE975300B8A395 /* FBHelper.swift */; };
 		7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */; };
 		7EBA86331CD428BB005F0461 /* SobreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86321CD428BB005F0461 /* SobreVC.swift */; };
 		7EBA86381CD42978005F0461 /* SobreTalitaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA86341CD42978005F0461 /* SobreTalitaVC.swift */; };
@@ -50,6 +48,7 @@
 /* Begin PBXFileReference section */
 		0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.release.xcconfig"; sourceTree = "<group>"; };
 		7E12EA781D21B15200009845 /* SubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTableViewCell.swift; sourceTree = "<group>"; };
+		7E12EA7C1D22FFA400009845 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		7E23CBF11D0089050002E33D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		7E2A82861D008F4400844389 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
@@ -62,12 +61,9 @@
 		7E2A82971D00DE8400844389 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Pods/GoogleNetworkingUtilities/Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		7E2A829A1D01405D00844389 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7E2A82A61D0235F400844389 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		7E2A82A81D02362600844389 /* AlbumList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumList.swift; sourceTree = "<group>"; };
 		7E2A82AA1D02369500844389 /* GraphApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphApi.swift; sourceTree = "<group>"; };
 		7E2A82AC1D0236FE00844389 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7E75FAF61CEE4C1B00B8A395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
-		7E75FAFA1CEE975300B8A395 /* FBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBHelper.swift; sourceTree = "<group>"; };
 		7E75FAFC1CEEB59A00B8A395 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7EBA86301CD427D2005F0461 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		7EBA86321CD428BB005F0461 /* SobreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreVC.swift; sourceTree = "<group>"; };
@@ -204,14 +200,12 @@
 		7EEC14081CE6BB860068D322 /* Projetos */ = {
 			isa = PBXGroup;
 			children = (
-				7E75FAF81CEE968E00B8A395 /* AlbumModel.swift */,
-				7E75FAFA1CEE975300B8A395 /* FBHelper.swift */,
 				7E2A82A61D0235F400844389 /* Album.swift */,
 				7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */,
 				7E12EA781D21B15200009845 /* SubTableViewCell.swift */,
-				7E2A82A81D02362600844389 /* AlbumList.swift */,
 				7E2A82AA1D02369500844389 /* GraphApi.swift */,
 				7E2A82AC1D0236FE00844389 /* Photo.swift */,
+				7E12EA7C1D22FFA400009845 /* Image.swift */,
 			);
 			name = Projetos;
 			sourceTree = "<group>";
@@ -366,16 +360,14 @@
 				7ECAA7071CD4203300F30D2F /* TableVCProjetos.swift in Sources */,
 				7E2A829B1D01405D00844389 /* LoginVC.swift in Sources */,
 				7E12EA791D21B15200009845 /* SubTableViewCell.swift in Sources */,
-				7E75FAFB1CEE975300B8A395 /* FBHelper.swift in Sources */,
 				7EBA86441CE12F14005F0461 /* Contato.swift in Sources */,
-				7E75FAF91CEE968E00B8A395 /* AlbumModel.swift in Sources */,
 				7EEC13F41CE2CFDB0068D322 /* WebViewController.swift in Sources */,
-				7E2A82A91D02362600844389 /* AlbumList.swift in Sources */,
 				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
 				7E2A82AB1D02369500844389 /* GraphApi.swift in Sources */,
 				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
 				7E2A82AD1D0236FE00844389 /* Photo.swift in Sources */,
+				7E12EA7D1D22FFA400009845 /* Image.swift in Sources */,
 				7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */,
 				7EEC14071CE69FD10068D322 /* TabBar.swift in Sources */,
 				7EEC14051CE65D950068D322 /* CustomActivityIndicatorView.swift in Sources */,

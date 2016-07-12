@@ -267,9 +267,9 @@ Para isso, realize o login no facebook.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-VI-SGe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="210" id="iyg-Rx-WQX"/>
+                                                        <constraint firstAttribute="height" constant="209" id="iyg-Rx-WQX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXB-0Z-fGM">
@@ -291,6 +291,7 @@ Para isso, realize o login no facebook.</string>
                                         <connections>
                                             <outlet property="bkimage" destination="DMJ-VI-SGe" id="ng9-JY-9Ax"/>
                                             <outlet property="heading" destination="wXB-0Z-fGM" id="1l9-qC-UCP"/>
+                                            <segue destination="29s-mp-g4C" kind="show" identifier="launchAlbumCollection" id="ALf-Er-7GD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -311,6 +312,45 @@ Para isso, realize o login no facebook.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66u-By-vj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1049.5" y="-691.5"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Gdf-Wa-0aV">
+            <objects>
+                <collectionViewController id="29s-mp-g4C" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NNd-7f-qLR">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zd3-mB-gdU">
+                            <size key="itemSize" width="182" height="182"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hcf-BO-hsw">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-42-D7w">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="29s-mp-g4C" id="eKv-PO-tqn"/>
+                            <outlet property="delegate" destination="29s-mp-g4C" id="0kX-ka-AFw"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVq-Z2-rAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627.5" y="-691.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ALP-Qe-s7B">
