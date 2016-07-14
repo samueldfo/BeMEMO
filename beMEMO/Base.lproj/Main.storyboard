@@ -289,9 +289,8 @@ Para isso, realize o login no facebook.</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bkimage" destination="DMJ-VI-SGe" id="ng9-JY-9Ax"/>
-                                            <outlet property="heading" destination="wXB-0Z-fGM" id="1l9-qC-UCP"/>
-                                            <segue destination="29s-mp-g4C" kind="show" identifier="launchAlbumCollection" id="ALf-Er-7GD"/>
+                                            <outlet property="bkimage" destination="DMJ-VI-SGe" id="Jvh-Of-JwI"/>
+                                            <outlet property="heading" destination="wXB-0Z-fGM" id="Pk8-15-E3E"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -307,16 +306,17 @@ Para isso, realize o login no facebook.</string>
                     <connections>
                         <outlet property="ProjetosTableView" destination="5xL-VB-qj3" id="rsy-Mk-LwL"/>
                         <segue destination="uyg-np-9zo" kind="presentation" identifier="notlogsegue" modalPresentationStyle="currentContext" id="EDa-sT-gpv"/>
+                        <segue destination="29s-mp-g4C" kind="show" identifier="launchAlbumCollection" id="vKg-WE-xoY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66u-By-vj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1049.5" y="-691.5"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Photos Collection View Controller-->
         <scene sceneID="Gdf-Wa-0aV">
             <objects>
-                <collectionViewController id="29s-mp-g4C" sceneMemberID="viewController">
+                <collectionViewController id="29s-mp-g4C" customClass="PhotosCollectionViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NNd-7f-qLR">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,7 +327,7 @@ Para isso, realize o login no facebook.</string>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hcf-BO-hsw">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectcell" id="Hcf-BO-hsw" customClass="PhotosCollectionViewCell" customModule="beMEMO" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

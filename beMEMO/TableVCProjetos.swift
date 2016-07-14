@@ -19,7 +19,6 @@ class TableVCProjetos: UIViewController {
     var albums: [Album] = []
     var album: Album?
     var covers: [Image] = []
-    var selectedAlbum: Album?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,9 +83,6 @@ class TableVCProjetos: UIViewController {
         return albums.count
     }
     
-    func selectRowAtIndexPath(indexPath:NSIndexPath!, animated: Bool, scrollPosition: UITableViewScrollPosition){
-        
-    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("AlbumCell", forIndexPath: indexPath) as! SubTableViewCell
@@ -111,8 +107,6 @@ class TableVCProjetos: UIViewController {
                     
                     let image = UIImage(data: coverData!)
                     cell.bkimage.image = image
-                    
-            
             
         }*/
         return cell
@@ -120,9 +114,8 @@ class TableVCProjetos: UIViewController {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        selectedAlbum = albums[indexPath.row]
         performSegueWithIdentifier("launchAlbumCollection", sender: self)
+
     }
     
     
