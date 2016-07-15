@@ -13,6 +13,21 @@ private let reuseIdentifier = "collectcell"
 class PhotosCollectionViewController: UICollectionViewController {
 
     var photos: [Photo] = []
+    var album: Album?
+    var graphApi: GraphApi = GraphApi()
+    var photoCache: ImageCache
+    
+    required init?(coder aDecoder: NSCoder) {
+        photoCache = (UIApplication.sharedApplication().delegate as! AppDelegate).photoCache
+        super.init(coder: aDecoder)
+        
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        photoCache = (UIApplication.sharedApplication().delegate as! AppDelegate).photoCache
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+    }
     
     
     override func viewDidLoad() {
@@ -23,13 +38,28 @@ class PhotosCollectionViewController: UICollectionViewController {
 
         self.collectionView!.backgroundColor = UIColor.whiteColor()
 
+        if let currentAlbum = album {
+            if let albumId = currentAlbum.id {
+                print(albumId)
+                graphApi.fetchPhotos(albumId, handler: photosHandler)
+            }
+        }
         
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
 
+    
+    func photosHandler(photos: [Photo]) {
+        self.photos = photos
+        print("\(self.photos.count)")
+        dispatch_async(dispatch_get_main_queue(), {
+            self.collectionView?.reloadData()
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,24 +77,40 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return photos.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! PhotosCollectionViewCell
+        
         // Configure the cell
-    
-        return cell
-    }
+        
+            let photo = photos[indexPath.row]
+            
+            if let photoUrl = photo.picture {
+                if let image = photoCache.get(photoUrl) {
+                    print("load from cache")
+                    cell.photoview.image = image
+                } else {
+                    print("load from network")
+                    let imageDownloader = ImageDownloader()
+                    imageDownloader.loadImage(photoUrl, completeHandler: {(image: UIImage) -> Void in
+                        self.photoCache.put(photoUrl, image: image)
+                        dispatch_async(dispatch_get_main_queue(), {
+                            if let cellToUpdate = collectionView.cellForItemAtIndexPath(indexPath) as? PhotosCollectionViewCell  {
+                                cellToUpdate.photoview.image = image
+                            }
+                        })
+                        }, errorHandler: nil)
+                }
+            }
+            return cell
+        }
+
+
 
     // MARK: UICollectionViewDelegate
 

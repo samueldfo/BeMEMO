@@ -18,6 +18,7 @@ class TableVCProjetos: UIViewController {
     var graphApi: GraphApi = GraphApi()
     var albums: [Album] = []
     var album: Album?
+    var selectedAlbum: Album?
     var covers: [Image] = []
     
     override func viewDidLoad() {
@@ -114,9 +115,22 @@ class TableVCProjetos: UIViewController {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedAlbum = albums[indexPath.row]
         performSegueWithIdentifier("launchAlbumCollection", sender: self)
 
     }
     
     
+
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+    if segue.identifier == "launchAlbumCollection" {
+        if let viewController = segue.destinationViewController as? PhotosCollectionViewController {
+            viewController.album = selectedAlbum
+        }
+    }
 }
+
+}
+

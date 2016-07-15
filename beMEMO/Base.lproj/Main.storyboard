@@ -340,6 +340,9 @@ Para isso, realize o login no facebook.</string>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="photoview" destination="iEA-42-D7w" id="kgP-gT-uMt"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
