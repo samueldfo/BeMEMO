@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7220788B2C5520E7968C2CAE /* Pods_beMEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */; };
-		7E12EA7D1D22FFA400009845 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E12EA7C1D22FFA400009845 /* Image.swift */; };
 		7E23CBF21D0089050002E33D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E23CBF11D0089050002E33D /* GoogleService-Info.plist */; };
 		7E2A82851D008F1500844389 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */; };
 		7E2A82871D008F4400844389 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A82861D008F4400844389 /* FirebaseDatabase.framework */; };
@@ -48,11 +47,11 @@
 		7EFF237E1D385C4900B4E833 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF237D1D385C4900B4E833 /* ImageCache.swift */; };
 		7EFF23801D385C7800B4E833 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF237F1D385C7800B4E833 /* ImageDownloader.swift */; };
 		7EFF23821D40334E00B4E833 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF23811D40334E00B4E833 /* PhotoViewController.swift */; };
+		7EFF23841D41698B00B4E833 /* ImageAlb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF23831D41698B00B4E833 /* ImageAlb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AA44FD7E511F1CD1A567302 /* Pods-beMEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.release.xcconfig"; sourceTree = "<group>"; };
-		7E12EA7C1D22FFA400009845 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		7E23CBF11D0089050002E33D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7E2A82841D008F1500844389 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		7E2A82861D008F4400844389 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		7EFF237D1D385C4900B4E833 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		7EFF237F1D385C7800B4E833 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		7EFF23811D40334E00B4E833 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		7EFF23831D41698B00B4E833 /* ImageAlb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAlb.swift; sourceTree = "<group>"; };
 		A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beMEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,19 +210,27 @@
 		7EEC14081CE6BB860068D322 /* Projetos */ = {
 			isa = PBXGroup;
 			children = (
-				7EFF237F1D385C7800B4E833 /* ImageDownloader.swift */,
-				7E2A82A61D0235F400844389 /* Album.swift */,
+				7EFF23851D416F3D00B4E833 /* Models */,
 				7ECAA7061CD4203300F30D2F /* TableVCProjetos.swift */,
 				7EFF23791D3843C600B4E833 /* SubTableViewCell.swift */,
 				7E2A82AA1D02369500844389 /* GraphApi.swift */,
-				7E2A82AC1D0236FE00844389 /* Photo.swift */,
-				7E12EA7C1D22FFA400009845 /* Image.swift */,
 				7EFF236F1D3825B200B4E833 /* PhotosCollectionViewCell.swift */,
 				7EFF23771D383D6B00B4E833 /* PhotosCollectionViewController.swift */,
 				7EFF23811D40334E00B4E833 /* PhotoViewController.swift */,
+				7EFF237F1D385C7800B4E833 /* ImageDownloader.swift */,
 				7EFF237D1D385C4900B4E833 /* ImageCache.swift */,
 			);
 			name = Projetos;
+			sourceTree = "<group>";
+		};
+		7EFF23851D416F3D00B4E833 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A82A61D0235F400844389 /* Album.swift */,
+				7E2A82AC1D0236FE00844389 /* Photo.swift */,
+				7EFF23831D41698B00B4E833 /* ImageAlb.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		98D20488A6741A1286DC156A /* Frameworks */ = {
@@ -380,11 +388,11 @@
 				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
 				7E2A82AB1D02369500844389 /* GraphApi.swift in Sources */,
+				7EFF23841D41698B00B4E833 /* ImageAlb.swift in Sources */,
 				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
 				7E2A82AD1D0236FE00844389 /* Photo.swift in Sources */,
 				7EFF237E1D385C4900B4E833 /* ImageCache.swift in Sources */,
 				7EFF23701D3825B200B4E833 /* PhotosCollectionViewCell.swift in Sources */,
-				7E12EA7D1D22FFA400009845 /* Image.swift in Sources */,
 				7EBA86421CE12CE5005F0461 /* TableVCContato.swift in Sources */,
 				7EEC14071CE69FD10068D322 /* TabBar.swift in Sources */,
 				7EFF23801D385C7800B4E833 /* ImageDownloader.swift in Sources */,

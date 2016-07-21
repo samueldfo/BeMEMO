@@ -12,55 +12,59 @@ import FBSDKShareKit
 
 class GraphApi {
     
-    let ALBUMS_PARAMETERS = ["fields": "id, name, count, cover_photo, created_time, description, location, type, from, picture{url}"]
+    let ALBUMS_PARAMETERS = ["fields": "id, name, count, cover_photo, description, type, picture{url}"]
     
-    let PHOTO_PARAMETERS = ["fields": "id, name, created_time, picture, images"]
+    let PHOTO_PARAMETERS = ["fields": "id, name, created_time, picture, images{source}"]
     
     let PHOTO_COVER_PARAMETERS = ["fields": "picture{url}"]
     
-    let ALBUM_COVER_PARAMETERS = ["fields": "cover_photo.fields(images)"]
+    let ALBUM_COVER_PARAMETERS = ["fields": "images{height}, images{source}, images{width}"]
     
-    //me profile picture
-    func fetchMeProfilePicture(handler: (String -> Void)) {
-        
-        let request = FBSDKGraphRequest(graphPath: "/1175201752496503/albums", parameters: PHOTO_COVER_PARAMETERS)
-        
+    //album covers
+    func fetchAlbumCovers(albumid: String, handler: ([ImageAlb] -> Void)) {
+        let request =  FBSDKGraphRequest(graphPath: "\(albumid)", parameters: ALBUM_COVER_PARAMETERS)
+        print(albumid)
         request.startWithCompletionHandler({(connection: FBSDKGraphRequestConnection!, result: AnyObject!, error: NSError!) -> Void in
             if error != nil {
-                print(error.localizedDescription)
+                print("\(error.localizedDescription)")
             } else {
-                //parse albums
-                //handler(self.parseAlbums(result))
-                print("\(result)")
-                if let albumcover = result as? NSDictionary {
-                    if let picture = albumcover["picture"] as? NSDictionary {
-                        if let pictureData = picture["data"] as? NSDictionary {
-                            if let pictureUrl = pictureData["url"] as? String {
-                                handler(pictureUrl)
-                            }
-                        }
-                    }
-                    
-                }
+                handler(self.parseAlbumCovers(result))
             }
         })
-        
     }
+    
+    func parseAlbumCovers(result: AnyObject!) -> [ImageAlb] {
+        var Albumcovers = [ImageAlb]()
+        print(result)
+        if let albumcoversJson = result as? NSDictionary {
+            if let dataJson = albumcoversJson["data"] as? NSArray {
+                for albumcoversJson in dataJson {
+                    print("\(albumcoversJson)")
+                    var albumcover = ImageAlb(
+                        height: albumcoversJson["height"] as? Int,
+                        source: albumcoversJson["source"] as? String,
+                        width: albumcoversJson["width"] as? Int)
+                    
+                    
+                    Albumcovers.append(albumcover)
+                    print(Albumcovers)
+                }
+            }
+        }
+        return Albumcovers
+    }
+    
     
     //albums
     func fetchAlbums(handler: ([Album] -> Void)) {
-        //var albums: [Album] = []
         let request =  FBSDKGraphRequest(graphPath: "/1175201752496503/albums", parameters: ALBUMS_PARAMETERS)
-        
         request.startWithCompletionHandler({(connection: FBSDKGraphRequestConnection!, result: AnyObject!, error: NSError!) -> Void in
             if error != nil {
                 print(error.localizedDescription)
             } else {
-                //parse albums
                 handler(self.parseAlbums(result))
             }
         })
-        // handler(albums)
     }
     
     func parseAlbums(result: AnyObject!) -> [Album] {
@@ -76,24 +80,24 @@ class GraphApi {
                         id: albumJson["id"] as? String,
                         name: albumJson["name"] as? String,
                         count: albumJson["count"] as? Int,
-                        cover: coverData["url"] as? String)
+                        cover: coverData["url"] as? String,
+                        description: albumJson["description"] as? String,
+                        type: albumJson["type"] as? String
+                            )
                         
                     albums.append(album)
                     //print(albums)
                         }
                     }
                 }
-                
             }
         }
         return albums
     }
     
-    func createAlbum() -> Bool {
-        
-        return true
-    }
+
     
+    //photos
     func fetchPhotos(albumid: String, handler: ([Photo] -> Void)) {
         let request =  FBSDKGraphRequest(graphPath: "\(albumid)/photos", parameters: PHOTO_PARAMETERS)
         request.startWithCompletionHandler({(connection: FBSDKGraphRequestConnection!, result: AnyObject!, error: NSError!) -> Void in
@@ -102,7 +106,6 @@ class GraphApi {
             } else {
                 handler(self.parsePhotos(result))
             }
-            
         })
     }
     
@@ -116,51 +119,16 @@ class GraphApi {
                         id: photoJson["id"] as? String,
                         name: photoJson["name"] as? String,
                         picture: photoJson["picture"] as? String,
-                        created_time: photoJson["created_time"] as? String)
+                        created_time: photoJson["created_time"] as? String,
+                        images: photoJson["images"] as? String)
+                    
                     photos.append(photo)
+                    //print(photos)
                 }
             }
             
         }
         return photos
     }
-    
-    
-    
-    func fetchCoverPhotos(albumid: String, handler: ([Image] -> Void)) {
-        let request =  FBSDKGraphRequest(graphPath: "\(albumid)", parameters: ALBUM_COVER_PARAMETERS)
-        request.startWithCompletionHandler({(connection: FBSDKGraphRequestConnection!, result: AnyObject!, error: NSError!) -> Void in
-            if error != nil {
-                print("\(error.localizedDescription)")
-            } else {
-                handler(self.parseCovers(result))
-            }
-            
-        })
-    }
-    
-    func parseCovers(result: AnyObject!) -> [Image] {
-        var covers = [Image]()
-        if let coversJson = result as? NSDictionary {
-            if let dataJson = coversJson["data"] as? NSArray {
-                for coverJson in dataJson {
-                    //print("\(coverJson)")
-                    let cover = Image(
-                        height: coverJson["height"] as? Int,
-                        source: coverJson["source"] as? String,
-                        width: coverJson["width"] as? Int)
-                    covers.append(cover)
-                }
-            }
-            
-        }
-        return covers
-    }
-
-    
-    
-    
-    
-    
     
 }

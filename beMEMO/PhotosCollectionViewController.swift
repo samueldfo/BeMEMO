@@ -18,6 +18,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     var photo: Photo?
     var graphApi: GraphApi = GraphApi()
     var photoCache: ImageCache
+
     
     required init?(coder aDecoder: NSCoder) {
         photoCache = (UIApplication.sharedApplication().delegate as! AppDelegate).photoCache
@@ -42,7 +43,7 @@ class PhotosCollectionViewController: UICollectionViewController {
 
         if let currentAlbum = album {
             if let albumId = currentAlbum.id {
-                print(albumId)
+                //print(albumId)
                 graphApi.fetchPhotos(albumId, handler: photosHandler)
             }
         }
@@ -56,11 +57,13 @@ class PhotosCollectionViewController: UICollectionViewController {
     
     func photosHandler(photos: [Photo]) {
         self.photos = photos
-        print("\(self.photos.count)")
+        //print("\(self.photos.count)")
         dispatch_async(dispatch_get_main_queue(), {
             self.collectionView?.reloadData()
         })
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

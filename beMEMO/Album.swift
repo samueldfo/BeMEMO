@@ -15,33 +15,16 @@ struct Album {
     var name: String?
     var count: Int?
     var cover: String?
+    var description: String?
+    var type: String?
     
-    /*
-     var cover_photo: String?
-     var can_update: Bool
-     var count: Int = 0
-     var created_time: String? //date string
-     var description: String?
-     
-     var link: String?
-     var location: String?
-     
-     
-     var privacy: String?
-     var type: AlbumType
-     var updated_time: String? //date string
-     */
-    /*
-     Not used for now
-     var from: User
-     var place: Page
-     */
-    
-    init(id: String?, name: String?, count: Int?, cover: String?) {
+    init(id: String?, name: String?, count: Int?, cover: String?, description: String?, type: String?) {
         self.id = id
         self.name = name
         self.count = count
         self.cover = cover
+        self.description = description
+        self.type = type
     }
     
 }

@@ -19,7 +19,8 @@ class TableVCProjetos: UIViewController {
     var albums: [Album] = []
     var album: Album?
     var selectedAlbum: Album?
-    var covers: [Image] = []
+    var albumsIds: [String] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +42,13 @@ class TableVCProjetos: UIViewController {
             print("Loged in...")
         
         graphApi.fetchAlbums(albumsHandler)
+        
+        
+            //let albumids = [String](albums.id)
+        //print (albumids)
             
-            /*print(albums.count)
             
-            if let currentAlbum = album {
+        /*    if let currentAlbum = album {
                 if let albumId = currentAlbum.id {
                     graphApi.fetchCoverPhotos(albumId, handler: CoverPhotosHandler)
                 }
@@ -56,6 +60,12 @@ class TableVCProjetos: UIViewController {
 
     func albumsHandler(albums: [Album]) {
         self.albums = albums
+        
+        for item in albums {
+            albumsIds.append(item.id!)
+        }
+        print (albumsIds)
+        
         //print("\(self.albums)")
         dispatch_async(dispatch_get_main_queue(), {
             self.ProjetosTableView.reloadData()
