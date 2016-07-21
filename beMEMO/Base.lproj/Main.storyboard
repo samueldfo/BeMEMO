@@ -350,10 +350,45 @@ Para isso, realize o login no facebook.</string>
                             <outlet property="delegate" destination="29s-mp-g4C" id="0kX-ka-AFw"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="hRl-k6-hsP" kind="show" identifier="showPhoto" id="1eJ-iD-CtM"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVq-Z2-rAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1627.5" y="-691.5"/>
+            <point key="canvasLocation" x="1553.5" y="-691.5"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="vQ5-3y-Z3a">
+            <objects>
+                <viewController id="hRl-k6-hsP" customClass="PhotoViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bl9-vp-a8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="msl-QW-vYi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bis-fk-PAT">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-tP-0iV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yeF-tP-0iV" firstAttribute="leading" secondItem="bis-fk-PAT" secondAttribute="leading" id="09j-4n-gX0"/>
+                            <constraint firstItem="yeF-tP-0iV" firstAttribute="bottom" secondItem="msl-QW-vYi" secondAttribute="top" id="HkJ-34-ovC"/>
+                            <constraint firstItem="yeF-tP-0iV" firstAttribute="top" secondItem="bl9-vp-a8a" secondAttribute="bottom" id="Ty5-9x-vGw"/>
+                            <constraint firstAttribute="trailing" secondItem="yeF-tP-0iV" secondAttribute="trailing" id="Z6z-a3-1gY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoview" destination="yeF-tP-0iV" id="tmL-NW-fei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6Q-Ub-Kpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135.5" y="-691.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ALP-Qe-s7B">

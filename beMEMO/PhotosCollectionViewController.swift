@@ -14,6 +14,8 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     var photos: [Photo] = []
     var album: Album?
+    var selectedPhoto: Photo?
+    var photo: Photo?
     var graphApi: GraphApi = GraphApi()
     var photoCache: ImageCache
     
@@ -110,8 +112,23 @@ class PhotosCollectionViewController: UICollectionViewController {
             return cell
         }
 
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        selectedPhoto = photos[indexPath.row]
+        performSegueWithIdentifier("showPhoto", sender: self)
+        
+    }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showPhoto" {
+           if let viewcontroller = segue.destinationViewController as? PhotoViewController {
+                viewcontroller.photo = selectedPhoto
+            //print(selectedPhoto!.picture)
+            }
+        }
+    }
+    
+  
+    
     // MARK: UICollectionViewDelegate
 
     /*
