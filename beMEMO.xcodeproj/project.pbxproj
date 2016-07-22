@@ -47,7 +47,7 @@
 		7EFF237E1D385C4900B4E833 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF237D1D385C4900B4E833 /* ImageCache.swift */; };
 		7EFF23801D385C7800B4E833 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF237F1D385C7800B4E833 /* ImageDownloader.swift */; };
 		7EFF23821D40334E00B4E833 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF23811D40334E00B4E833 /* PhotoViewController.swift */; };
-		7EFF23841D41698B00B4E833 /* ImageAlb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF23831D41698B00B4E833 /* ImageAlb.swift */; };
+		7EFF23841D41698B00B4E833 /* CoverPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF23831D41698B00B4E833 /* CoverPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +93,7 @@
 		7EFF237D1D385C4900B4E833 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		7EFF237F1D385C7800B4E833 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		7EFF23811D40334E00B4E833 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		7EFF23831D41698B00B4E833 /* ImageAlb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAlb.swift; sourceTree = "<group>"; };
+		7EFF23831D41698B00B4E833 /* CoverPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverPhoto.swift; sourceTree = "<group>"; };
 		A84777A1F588A5841351FBDE /* Pods-beMEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beMEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beMEMO/Pods-beMEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		AEEB584340F81F6F412D4B96 /* Pods_beMEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beMEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -228,7 +228,7 @@
 			children = (
 				7E2A82A61D0235F400844389 /* Album.swift */,
 				7E2A82AC1D0236FE00844389 /* Photo.swift */,
-				7EFF23831D41698B00B4E833 /* ImageAlb.swift */,
+				7EFF23831D41698B00B4E833 /* CoverPhoto.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 				7EBA86311CD427D2005F0461 /* CAPSPageMenu.swift in Sources */,
 				7ECAA7051CD4203300F30D2F /* AppDelegate.swift in Sources */,
 				7E2A82AB1D02369500844389 /* GraphApi.swift in Sources */,
-				7EFF23841D41698B00B4E833 /* ImageAlb.swift in Sources */,
+				7EFF23841D41698B00B4E833 /* CoverPhoto.swift in Sources */,
 				7EBA863A1CD42978005F0461 /* SobreEmpresaVC.swift in Sources */,
 				7E2A82AD1D0236FE00844389 /* Photo.swift in Sources */,
 				7EFF237E1D385C4900B4E833 /* ImageCache.swift in Sources */,

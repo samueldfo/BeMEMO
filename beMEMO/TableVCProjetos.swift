@@ -20,6 +20,8 @@ class TableVCProjetos: UIViewController {
     var album: Album?
     var selectedAlbum: Album?
     var albumsIds: [String] = []
+    var albumcover: CoverPhoto?
+    var albumcovers: [CoverPhoto] = []
     
     
     override func viewDidLoad() {
@@ -43,44 +45,34 @@ class TableVCProjetos: UIViewController {
         
         graphApi.fetchAlbums(albumsHandler)
         
-        
-            //let albumids = [String](albums.id)
-        //print (albumids)
-            
-            
-        /*    if let currentAlbum = album {
-                if let albumId = currentAlbum.id {
-                    graphApi.fetchCoverPhotos(albumId, handler: CoverPhotosHandler)
-                }
-            }
-        */
         }
-     
-        }
+    }
+    
+    
 
     func albumsHandler(albums: [Album]) {
         self.albums = albums
-        
+        //print(albums)
         for item in albums {
             albumsIds.append(item.id!)
         }
-        print (albumsIds)
+        //print(albumsIds)
+        for albumid in albumsIds {
+            //print(albumid)
+            graphApi.fetchAlbumCovers(albumid, handler: AlbumCoverHandler)
+        }
         
-        //print("\(self.albums)")
+        
         dispatch_async(dispatch_get_main_queue(), {
             self.ProjetosTableView.reloadData()
         })
     }
     
-    /*func CoverPhotosHandler(covers: [Image]) {
-            self.covers = covers
-            //print("\(self.covers)")
-            dispatch_async(dispatch_get_main_queue(), {
-                self.ProjetosTableView.reloadData()
-            })
-            
- 
-    }*/
+    func AlbumCoverHandler(albumcovers: [CoverPhoto]) {
+        self.albumcovers = albumcovers
+        //print(albumcovers)
+    
+}
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -90,7 +82,6 @@ class TableVCProjetos: UIViewController {
     // MARK: - Table view data source
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return albums.count
     }
     

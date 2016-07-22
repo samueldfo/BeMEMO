@@ -1,5 +1,5 @@
 //
-//  ImageAlb.swift
+//  CoverPhoto.swift
 //  beMEMO
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 21/07/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ImageAlb {
+struct CoverPhoto {
     
     
     var height: Int?
