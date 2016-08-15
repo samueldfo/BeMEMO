@@ -76,6 +76,8 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCellWithIdentifier("ContatoCell", forIndexPath: indexPath)
         let Contato = data[indexPath.row]
         
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        
         cell.textLabel?.text = Contato.name //carrega nome da array
         cell.imageView?.image = Contato.image //carrega imagem da array
         //cell.textLabel?.font = UIFont.italicSystemFontOfSize(18) //fonte italic e tamanho da fonte

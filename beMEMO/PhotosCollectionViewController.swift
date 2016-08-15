@@ -39,12 +39,15 @@ class PhotosCollectionViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
+        self.navigationItem.title = album!.name
         self.collectionView!.backgroundColor = UIColor.whiteColor()
+        
+
 
         if let currentAlbum = album {
             if let albumId = currentAlbum.id {
                 //print(albumId)
-                graphApi.fetchPhotos(albumId, handler: photosHandler)
+                graphApi.fetchPhotos(albumId, completionHandler: photosHandler)
             }
         }
         

@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         FIRApp.configure()
         
+        // change tint color of navigation bar
+        UINavigationBar.appearance().tintColor = UIColor.blackColor()
+        
         // change tint color of tab bar items
         UITabBar.appearance().tintColor = UIColor.blackColor()
         

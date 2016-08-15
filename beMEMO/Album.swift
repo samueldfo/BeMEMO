@@ -14,17 +14,18 @@ struct Album {
     var id: String?
     var name: String?
     var count: Int?
-    var cover: String?
+    var picture: String?
     var description: String?
     var type: String?
+    var coverid: String?
     
-    init(id: String?, name: String?, count: Int?, cover: String?, description: String?, type: String?) {
+    init(id: String?, name: String?, count: Int?, picture: String?, description: String?, type: String?, coverid: String?) {
         self.id = id
         self.name = name
         self.count = count
-        self.cover = cover
+        self.picture = picture
         self.description = description
         self.type = type
+        self.coverid = coverid
     }
-    
 }

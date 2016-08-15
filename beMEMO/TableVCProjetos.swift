@@ -17,11 +17,9 @@ class TableVCProjetos: UIViewController {
     
     var graphApi: GraphApi = GraphApi()
     var albums: [Album] = []
-    var album: Album?
     var selectedAlbum: Album?
-    var albumsIds: [String] = []
-    var albumcover: CoverPhoto?
-    var albumcovers: [CoverPhoto] = []
+    var coverIds: [String] = []
+    var Albumcovers: [CoverPhoto] = []
     
     
     override func viewDidLoad() {
@@ -43,36 +41,41 @@ class TableVCProjetos: UIViewController {
         } else {
             print("Loged in...")
         
-        graphApi.fetchAlbums(albumsHandler)
-        
+            graphApi.fetchAlbums(albumsHandler)
+            
+            
         }
     }
-    
-    
 
     func albumsHandler(albums: [Album]) {
         self.albums = albums
         //print(albums)
-        for item in albums {
-            albumsIds.append(item.id!)
-        }
-        //print(albumsIds)
-        for albumid in albumsIds {
-            //print(albumid)
-            graphApi.fetchAlbumCovers(albumid, handler: AlbumCoverHandler)
-        }
+        
+        ids(albums)
         
         
         dispatch_async(dispatch_get_main_queue(), {
             self.ProjetosTableView.reloadData()
         })
     }
+    func ids(albums: [Album]) -> [CoverPhoto] {
+        
+        for item in albums {
+            coverIds.append(item.coverid!)
+        }
+        for coverid in coverIds {
+            graphApi.fetchAlbumCovers(coverid, completionHandler: AlbumCoverHandler)
+        }
+        return Albumcovers
+    }
     
-    func AlbumCoverHandler(albumcovers: [CoverPhoto]) {
-        self.albumcovers = albumcovers
-        //print(albumcovers)
-    
-}
+    func AlbumCoverHandler(Albumcovers: [CoverPhoto]) {
+        self.Albumcovers = Albumcovers
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.ProjetosTableView.reloadData()
+        })
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -85,21 +88,29 @@ class TableVCProjetos: UIViewController {
         return albums.count
     }
     
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("AlbumCell", forIndexPath: indexPath) as! SubTableViewCell
         // Configure the cell...
         
-            let data = albums[indexPath.row]
-            cell.heading.text = data.name
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         
-            if (data.cover != ""){
-                let coverPhotoURL = NSURL(string: data.cover!)
+        let data = albums[indexPath.row]
+
+        //print(Albumcovers)
+        
+        //let datacover = Albumcovers[indexPath.row]
+        
+        cell.heading.text = data.name
+        
+            if (data.picture != ""){
+                let coverPhotoURL = NSURL(string: data.picture!)
                 let coverPhotoData = NSData(contentsOfURL: coverPhotoURL!)
          
                 let image = UIImage(data: coverPhotoData!)
                 cell.bkimage.image = image
             }
+        
+        return cell
         
             /*let cover = covers[indexPath.row]
         
@@ -109,26 +120,28 @@ class TableVCProjetos: UIViewController {
                     
                     let image = UIImage(data: coverData!)
                     cell.bkimage.image = image
-            
         }*/
-        return cell
         
     }
-    
+ 
+    //função que faz a transição da segue "launchAlbumCollection ao selecionar item da tabela
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedAlbum = albums[indexPath.row]
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         performSegueWithIdentifier("launchAlbumCollection", sender: self)
-
     }
     
     
-
+    //funçao que verifica a segue utilizada e a próxima view e passa informação do objeto selecionado "album" para a próxima view controller
 override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
     if segue.identifier == "launchAlbumCollection" {
         if let viewController = segue.destinationViewController as? PhotosCollectionViewController {
             viewController.album = selectedAlbum
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = "Voltar"
+            navigationItem.backBarButtonItem = backItem
+            
         }
     }
 }
