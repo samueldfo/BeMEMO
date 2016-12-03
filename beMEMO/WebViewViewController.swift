@@ -1,5 +1,5 @@
 //
-//  WebViewController.swift
+//  WebViewViewController.swift
 //  beMEMO
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 10/05/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WebViewController: UIViewController, UIWebViewDelegate {
+class WebViewViewController: UIViewController, UIWebViewDelegate {
     
     var webView: UIWebView!
     

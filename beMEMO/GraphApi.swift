@@ -38,7 +38,7 @@ class GraphApi {
         //print(result)
         if let albumcoversJson = result as? NSDictionary {
             
-            var albumcover = CoverPhoto(
+            let albumcover = CoverPhoto(
                     height: albumcoversJson["height"] as? Int,
                     width: albumcoversJson["width"] as? Int,
                     source: albumcoversJson["source"] as? String
@@ -73,14 +73,14 @@ class GraphApi {
                         if let pictureData = picture["data"] as? NSDictionary{
                             if let coverphoto = albumJson["cover_photo"] as? NSDictionary {
                                 
-                    let album = Album(
-                        id: albumJson["id"] as? String,
-                        name: albumJson["name"] as? String,
-                        count: albumJson["count"] as? Int,
-                        picture: pictureData["url"] as? String,
-                        description: albumJson["description"] as? String,
-                        type: albumJson["type"] as? String,
-                        coverid: coverphoto["id"] as? String
+                                let album = Album(
+                                    id: albumJson["id"] as? String,
+                                    name: albumJson["name"] as? String,
+                                    count: albumJson["count"] as? Int,
+                                    picture: pictureData["url"] as? String,
+                                    description: albumJson["description"] as? String,
+                                    type: albumJson["type"] as? String,
+                                    coverid: coverphoto["id"] as? String
                                 )
                                 albums.append(album)
                                 //print(albums)
@@ -115,7 +115,7 @@ class GraphApi {
             if let dataJson = photosJson["data"] as? NSArray {
                 for photoJson in dataJson {
                     //print("\(photoJson)")
-                    var photo = Photo(
+                    let photo = Photo(
                         id: photoJson["id"] as? String,
                         name: photoJson["name"] as? String,
                         picture: photoJson["picture"] as? String,

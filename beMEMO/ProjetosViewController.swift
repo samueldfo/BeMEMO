@@ -1,5 +1,5 @@
 //
-//  TableVCProjetos.swift
+//  ProjetosViewController.swift
 //  beMEMO
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 19/05/16.
@@ -9,8 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 
-
-class TableVCProjetos: UIViewController {
+class ProjetosViewController: UIViewController {
 
     @IBOutlet weak var ProjetosTableView: UITableView!
 

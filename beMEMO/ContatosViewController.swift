@@ -1,5 +1,5 @@
 //
-//  TableVCContato.swift
+//  ContatosViewController.swift
 //  beMEMO
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 09/05/16.
@@ -9,8 +9,7 @@
 import UIKit
 import MessageUI
 
-class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
-
+class ContatosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var ContatoTableView: UITableView! //outlet tablet view
     
@@ -166,7 +165,7 @@ class TableVCContato: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if (segue.identifier == "websegue") {
             
-            let webViewController = segue.destinationViewController as! WebViewController
+            let webViewController = segue.destinationViewController as! WebViewViewController
             
             switch indicecell{
             case 0:

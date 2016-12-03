@@ -1,5 +1,5 @@
 //
-//  SobreVC.swift
+//  SobreViewController.swift
 //  beMEMO
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 29/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SobreVC: UIViewController {
+class SobreViewController: UIViewController {
 
     var pageMenu : CAPSPageMenu?
     

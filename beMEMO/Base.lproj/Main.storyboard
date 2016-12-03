@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--TableVC Contato-->
+        <!--Contatos View Controller-->
         <scene sceneID="8QG-WW-Bgm">
             <objects>
-                <viewController id="iIq-e5-LgG" customClass="TableVCContato" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iIq-e5-LgG" customClass="ContatosViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="URp-hg-oBE"/>
                         <viewControllerLayoutGuide type="bottom" id="sAW-Ja-MBo"/>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="971.5" y="279.5"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Web View View Controller-->
         <scene sceneID="jzD-aj-zuN">
             <objects>
-                <viewController id="pmR-Vl-0d8" customClass="WebViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pmR-Vl-0d8" customClass="WebViewViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eUG-8p-iu1"/>
                         <viewControllerLayoutGuide type="bottom" id="du7-0P-yJ6"/>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1476.5" y="279.5"/>
         </scene>
-        <!--SobreVC-->
+        <!--Sobre View Controller-->
         <scene sceneID="oGI-Es-4TA">
             <objects>
-                <viewController id="9QM-Nn-PJT" customClass="SobreVC" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9QM-Nn-PJT" customClass="SobreViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VMt-1W-d7l"/>
                         <viewControllerLayoutGuide type="bottom" id="rt7-9a-9po"/>
@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="462.5" y="279.5"/>
         </scene>
-        <!--LoginVC-->
+        <!--LoginViewController-->
         <scene sceneID="vKs-yI-CTe">
             <objects>
-                <viewController storyboardIdentifier="loginVC" title="LoginVC" extendedLayoutIncludesOpaqueBars="YES" id="uyg-np-9zo" customClass="LoginVC" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" extendedLayoutIncludesOpaqueBars="YES" id="uyg-np-9zo" customClass="LoginViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1CZ-7q-FjO"/>
                         <viewControllerLayoutGuide type="bottom" id="hyL-FA-zKq"/>
@@ -239,10 +239,10 @@ Para isso, realize o login no facebook.</string>
             </objects>
             <point key="canvasLocation" x="-642.5" y="279.5"/>
         </scene>
-        <!--TableVC Projetos-->
+        <!--Projetos View Controller-->
         <scene sceneID="Kfs-rP-oTx">
             <objects>
-                <viewController id="gce-Ds-Kdc" customClass="TableVCProjetos" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gce-Ds-Kdc" customClass="ProjetosViewController" customModule="beMEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x4D-AA-6IM"/>
                         <viewControllerLayoutGuide type="bottom" id="JLy-jd-rTe"/>
