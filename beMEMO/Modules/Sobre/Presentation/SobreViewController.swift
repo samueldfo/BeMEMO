@@ -36,10 +36,10 @@ class SobreViewController: UIViewController {
         // (Can be any UIViewController subclass)
         // Make sure the title property of all view controllers is set
         // Example:
-        let controller1 : UIViewController = UIViewController(nibName: "SobreEmpresaVC", bundle: nil)
+        let controller1 : UIViewController = UIViewController(nibName: "EmpresaViewController", bundle: nil)
         controller1.title = "A Empresa"
         controllerArray.append(controller1)
-        let controller2 : UIViewController = UIViewController(nibName: "SobreTalitaVC", bundle: nil)
+        let controller2 : UIViewController = UIViewController(nibName: "TalitaViewController.swift", bundle: nil)
         controller2.title = "Talita Dias"
         controllerArray.append(controller2)
         

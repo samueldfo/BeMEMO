@@ -1,5 +1,5 @@
 //
-//  SobreEmpresaVC.swift
+//  EmpresaViewController.swift
 //  
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 29/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SobreEmpresaVC: UIViewController {
+class EmpresaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  SobreTalitaVC.swift
+//  TalitaViewController.swift
 //  
 //
 //  Created by Samuel Dias Fernandes de Oliveira on 29/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SobreTalitaVC: UIViewController {
+class TalitaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
